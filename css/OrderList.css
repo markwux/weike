@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font:Arial, Helvetica, sans-serif 13px; margin:0px;
+	}
+	a{
+		text-decoration:none;
+		}
+		.clear_both{
+			clear:both;
+		}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	.listView{
+		color:#000;
+		
+	}
+	
+	
+	.listView .orderUl{
+		margin:0px;
+		padding:0px;
+		width:100%;
+	}
+	
+	.listView .orderUl li{
+		border-top-style:solid;
+		border-width:10px;
+		border-color:#F5F5F5;
+		padding-top:15px;
+		padding-bottom:12px;
+		list-style:none;
+		width:100%;
+		float:left;
+		display:block;
+	}
+	.listView .orderUl li .orderCount{
+		padding-left:15px;
+		padding-bottom:15px;
+		font-size:15px;
+		color:#606060;
+		float:left;
+	}
+	.listView .orderUl li .statusLabel{
+		padding-right:15px;
+		font-size:13px;
+		color:#FFC4BE;
+		float:right;
+	}
+	.listView .orderUl li .imageNameView{
+		padding:15px;
+		height:60px;
+		border-top-style:solid;
+		border-bottom-style:solid;
+		border-width:2px;
+		border-color:#F5F5F5;
+	}
+	.listView .orderUl li .imageNameView .leftImage{
+		width:80px;
+		height:60px;
+		float:left;
+	}
+	.listView .orderUl li .imageNameView .rightImage{
+		width:12px;
+		height:20px;
+		float:right;
+		padding-top:20px;
+	}
+	.listView .orderUl li .imageNameView .nameLabel{
+		font-size:14px;
+		color:#4D4D4D;
+		float:left;
+		padding-left:15px;
+	}
+	.listView .orderUl li .imageNameView .baseCount{
+		font-size:11px;
+		color:#4D4D4D;
+		position:absolute;
+		
+		padding-left:95px;
+		padding-top:25px;
+		padding-bottom:9px;
+	}
+	
+	.listView .orderUl li .imageNameView  .moneyCountView{
+		font-size:11px;
+		width:100%;
+		height:30px;
+		padding-left:95px;
+		padding-top:48px;
+		padding-right:10px;
+		position:absolute;
+	}
+	.listView .orderUl li .imageNameView .moneyCountView .countTitle{
+		font-size:11px;
+		color:#A4A4A4;
+		float:left;
+		
+	}
+	.listView .orderUl li .imageNameView .moneyCountView .moneyCount{
+		font-size:11px;
+		color:#FFC4BE;
+		float:left;
+		padding-left:5px;
+	}
+	.listView .orderUl li .imageNameView .moneyCountView .totalCountTitle{
+		font-size:11px;
+		color:#A4A4A4;
+		float:left;
+		padding-left:15px;
+	}
+	.listView .orderUl li .imageNameView .moneyCountView .totalmoneyCount{
+		font-size:12px;
+		color:#FFC4BE;
+		float:left;
+		padding-left:5px;
+	}
+		
+	
+	.listView .orderUl li .dateView{
+		font-size:12px;
+		padding-top:15px;
+		padding-bottom:15px;
+		padding-right:10px;
+		border-bottom-style:solid;
+		border-width:2px;
+		border-color:#F5F5F5;
+		text-align:center;
+	}
+	
+	.listView .orderUl li .dateView .leftLabel{
+		color:#00F;
+		border-right-style:solid;
+		border-width:2px;
+		border-color:#F5F5F5;
+		padding-left:5px;
+		padding-right:10px;
+		float:left;
+		
+	}
+	
+	.listView .orderUl li .dateView .centerLabel{
+		color:#A4A4A4;
+		height:20px;
+	}
+	
+	.listView .orderUl li .dateView .rightLabel{
+		color:#A4A4A4;
+		border-left-style:solid;
+		border-width:2px;
+		border-color:#F5F5F5;
+		
+		float:right;
+		padding-left:10px;
+		text-align:center;
+	}
+	
+	.listView .orderUl li .operationView{
+		font-size:14px;
+		height:3px;
+		color:#90A2FF;
+		text-align:center;
+		padding-top:12px;
+		padding-bottom:12px;
+	}
+	.listView .orderUl li .operationView .rightButton{
+		float:right;
+		width:50%;
+	}
+	.listView .orderUl li .operationView .leftButton{
+		float:left;
+		width:50%;
+	}
+	
+	.listView .orderUl li .operationView .centerButton{
+		width:100%;
+		
+	}
+	/*底部空白div*/
+	.bottomBlankView{
+		height:50px;
+	}
+	
+	.bottomView{
+		background-color:#FFF;
+		font-size:13px;
+		position:fixed;
+		width:100%;
+		bottom:0px;
+	}
+		
+	.bottomView .searchUl{
+		margin:0px;
+		padding:0px;
+		width:100%;
+		
+	}
+	.bottomView .searchUl li{
+		border-top-style:solid;
+		border-width:2px;
+		border-color:#F5F5F5;
+		
+		padding-top:15px;
+		padding-bottom:15px;
+		
+		list-style:none;
+		text-align:center;
+		
+		width:25%;
+		height:15px;
+		float:left;
+		display:block;
+	}
+	
+	.bottomView .searchUl li .titleLabel{
+		/*float:left;*/
+		
+		color:#A4A4A4;
+		line-height:15px;
+	}
+	.bottomView .searchUl li .rightImage{
+		width:2px;
+		height:15px;
+		float:right;
+		padding-right:5px;
+		color:#F5F5F5;
+	}
+	.bottomView .searchUl li .rightLastImage{
+		width:15px;
+		height:12px;
+		padding-right:5px;
+		padding-top:3px;
+		float:right;
+		color:#F5F5F5;
+	}
+		
+		
+	.popMenuView{
+		position:fixed;
+		height:200px;
+		bottom:50px;
+		right:5px;
+		width:25%;
+		float:right;
+		font-size:14px;
+		background-color:#FFF;
+	}
+	.popMenuView .popUl{
+		
+		margin:0;
+		padding:0;
+		width:100%;
+	}
+	.popMenuView .popUl li{
+		border-bottom-style:solid;
+		border-width:1px;
+		border-color:#F5F5F5;
+		
+		padding-top:15px;
+		padding-bottom:15px;
+		
+		list-style:none;
+		text-align:center;
+		
+		width:100%;
+		height:15px;
+		display:block;
+	}
+	.popMenuView .popUl li .titleLabel{
+		
+	}
+	

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    body{
+	   font:Arial, Helvetica, sans-serif 13px; margin:0px;
+	}
+	a{
+		text-decoration:none;
+	 }
+	.clear_both{
+		 clear:both;
+	}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */ 
+	
+	.orderNumberView{
+		border-top-style:solid;
+		border-color:#F5F5F5;
+		border-top-width:8px;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		padding:15px 15px;
+		height:15px;
+		
+		font-size:15px;
+		
+	}
+	.orderNumberView .orderStatus{
+		font-size:13px;
+		color:#FFC4BE;
+		float:right;
+	}
+	.orderNumberView .number{
+		font-size:15px;
+		color:#0F0F0F;
+		float:left;
+	}
+	
+	.houseMessageView{
+		font-size:13px;
+		color:#606060;
+	}
+	
+	.houseMessageView .messUl{
+		
+		margin:0;
+		padding:0;
+		width:100%;
+		text-align:center;
+	}
+	
+	.houseMessageView .messUl li{
+		padding-top:15px;
+		list-style:none;
+		text-align:center;
+		float:left;
+		width:100%;
+		display:block;
+	}
+	
+	.houseMessageView .messUl li .leftTitle{
+		padding-left:15px;
+		color:#A4A4A4;
+		float:left;
+	}
+	.houseMessageView .messUl li .leftContent{
+		color:#0F0F0F;
+		padding-left:6px;
+		float:left;
+	}
+	.houseMessageView .messUl li .centerContent{
+		color:#0F0F0F;
+		width:5px;
+		text-align:center;
+	}
+	
+	.houseMessageView .messUl li .rightTitle{
+		padding-right:15px;
+		color:#90A2FF;
+		float:right;
+	}
+	.houseMessageView .messUl li .phoneCall{
+		padding:5px 15px;
+		border-style:solid;
+		border-color::#FFC4BE;
+		border-radius:5px;
+		border-width:1px;
+		color:#FFC4BE;
+	}
+	
+	.checkInView{
+		text-align:center;
+		font-size:15px;
+		color:#90A2FF;
+		width:100%;
+		background-color:#FFF;
+		position:fixed;
+		bottom:0px;
+		height:18px;
+		padding:15px 0px;
+	}
