@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+	.customBlackColor{
+		color:#0F0F0F;
+	}
+
+	.lightGrayColor{
+		color:#A4A4A4;
+	}
+		
+	.deepGrayColor{
+		color:#5C5C5C;
+	}
+	
+	.orangeColor{
+		color:#FFC4BE;
+	}
+	.redColor{
+		color:#FF5B5B;
+	}
+	.borderColor{
+		border-color:#F5F5F5;
+	}
+	.backGroundColer{
+		border-color:#F5F5F5;
+	}
+	.borderBluePurpleColor{
+		border-color:#90A2FF;
+	}
+	
+	.bluePurpleColor{
+		 color:#90A2FF;
+	}
+	
+		/*底部空白div*/
+	.bottomBlankView{
+		height:55px;
+	}
+	
+	.bottomButtonView{
+		text-align:center;
+		width:100%;
+		height:20px;
+		padding:15px 0px;
+		font-size:15px;
+		position:fixed;
+		bottom:0px;
+		background-color:#FFF;
+	}
+		
+	
+	.mavView{
+		padding:18px 5px 15px;
+		color:#FFF;
+		text-align:center;
+		position:fixed;
+		top:0px;
+	}
+	.mavView .backImage{
+		width:20px;
+		height:15px;
+		float:left;
+	}
+	.mavView titleLabel{
+		font-size:15px;
+	}
+	

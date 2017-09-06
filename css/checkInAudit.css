@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    body{
+	   font:Arial, Helvetica, sans-serif 13px; margin:0px;
+	}
+	a{
+		text-decoration:none;
+	 }
+	.clear_both{
+		 clear:both;
+	}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */ 
+	
+	
+	.cellListView{
+		font-size:13px;
+	}
+	
+	.cellListView .checkInAuditUl{
+		margin:0;
+		padding:0;
+		width:100%;
+		text-align:center;
+	}  
+	
+	.cellListView .checkInAuditUl li{
+		padding-top:10px;
+		padding-bottom:10px;
+		border-bottom-style:solid;
+		/*border-color:#F5F5F5;*/
+		border-width:1px;
+		list-style:none;
+		text-align:center;
+		float:left;
+		width:100%;
+		display:block;
+	}
+	
+	.cellListView .checkInAuditUl li .leftTitle{
+		padding-left:15px;
+		/*color:#A4A4A4;*/
+		float:left;
+	}
+	.cellListView .checkInAuditUl li .leftContent{
+		/*color:#0F0F0F;*/
+		padding-left:8px;
+		float:left;
+	}
+	
+	.cellListView .checkInAuditUl li .rightImage{
+		padding-right:15px;
+		width:12px;
+		height:16px;
+		float:right;
+	}
+	
+	.cellListView .checkInAuditUl li .jianhaoRightContent{
+		padding-right:15px;
+		/*color:#90A2FF*/;
+		float:right;
+	}
+	.cellListView .checkInAuditUl li .rightCenterContent{
+		/*color:#90A2FF;*/
+		padding-right:15px;
+		float:right;
+	}
+	
+	.cellListView .checkInAuditUl li .jiahaoleftContent{
+		padding-right:15px;
+		/*color:#90A2FF;*/
+		float:right;
+	}
+	.cellListView .checkInAuditUl li .textViewContent{
+		/*padding-right:5%;
+		padding-left:5%;*/
+		width:96%;
+		height:50px;
+		margin-left:1%;
+		margin-right:1%;
+		border-style:solid;
+		border-width:2px;
+		border-color:#F5F5F5;
+	}
+	
+	.buttonView{
+		border-bottom-style:solid;
+		border-color:#F5F5F5;
+		border-width:8px;
+		width:100%;
+	}
+	
+	.buttonView .sureButton{
+		background-color:#90A2FF;
+		border-radius:5px;
+		border-style:solid;
+		/*border-color:#90A2FF;*/
+		border-width:1px;
+		height:20px;
+		font-size:15px;
+		width:49%;
+		float:right;
+		padding-bottom:8px;
+		padding-top:8px;
+		text-align:center;
+	}
+	
+	.buttonView .cancelButton{
+		background-color:#90A2FF;
+		border-radius:5px;
+		border-style:solid;
+		/*border-color:#90A2FF;*/
+		border-width:1px;
+		height:20px;
+		font-size:15px;
+		width:49%;
+		float:left;
+		padding-bottom:8px;
+		padding-top:8px;
+		text-align:center;
+	}
+	
+	/*灰色遮罩层*/
+	.fade{
+		width:100%;
+		height:100%;
+		background:rgba(0, 0, 0, 0.5);
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 99;
+	}
+	/*弹出层*/ 
+	.succ-pop{
+		width: 300px;
+		height: 160px;
+		background: #fff;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin-left: -150px;
+		padding-top:20PX;
+		margin-top: -80px;
+		z-index: 999;
+		border-radius: 5px;
+	}   
+	.succ-pop h3.title{
+		text-align: center;
+		font-size: 20px;
+		color:#000;
+		padding-bottom:30px;
+	}
+	
+	.succ-pop .cancelPopButton{
+		
+			background-color:#90A2FF;
+			border-radius:5px;
+			border-style:solid;
+			border-color:#90A2FF;
+			border-width:1px;
+			height:20px;
+			font-size:15px;
+			width:40%;
+			margin-left:20px;
+			float:left;
+			padding-bottom:8px;
+			padding-top:8px;
+			text-align:center;
+	}
+	
+	.succ-pop .surePopButton{
+			background-color:#90A2FF;
+			border-radius:5px;
+			border-style:solid;
+			border-color:#90A2FF;
+			border-width:1px;
+			height:20px;
+			font-size:15px;
+		    margin-right: 20px;
+			width:40%;
+			float:right;
+			padding-bottom:8px;
+			padding-top:8px;
+			text-align:center;
+	}
+	

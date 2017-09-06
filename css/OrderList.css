@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body{
+    body{
 	font:Arial, Helvetica, sans-serif 13px; margin:0px;
 	}
 	a{
@@ -31,7 +31,7 @@ body{
 	.listView .orderUl li{
 		border-top-style:solid;
 		border-width:10px;
-		border-color:#F5F5F5;
+		/*border-color:#F5F5F5;*/
 		padding-top:15px;
 		padding-bottom:12px;
 		list-style:none;
@@ -73,13 +73,13 @@ body{
 	}
 	.listView .orderUl li .imageNameView .nameLabel{
 		font-size:14px;
-		color:#4D4D4D;
+		/*color:#4D4D4D;*/
 		float:left;
 		padding-left:15px;
 	}
 	.listView .orderUl li .imageNameView .baseCount{
 		font-size:11px;
-		color:#4D4D4D;
+		/*color:#4D4D4D;*/
 		position:absolute;
 		
 		padding-left:95px;
@@ -98,25 +98,25 @@ body{
 	}
 	.listView .orderUl li .imageNameView .moneyCountView .countTitle{
 		font-size:11px;
-		color:#A4A4A4;
+		/*color:#A4A4A4;*/
 		float:left;
 		
 	}
 	.listView .orderUl li .imageNameView .moneyCountView .moneyCount{
 		font-size:11px;
-		color:#FFC4BE;
+		/*color:#FFC4BE;*/
 		float:left;
 		padding-left:5px;
 	}
 	.listView .orderUl li .imageNameView .moneyCountView .totalCountTitle{
 		font-size:11px;
-		color:#A4A4A4;
+		/*color:#A4A4A4;*/
 		float:left;
 		padding-left:15px;
 	}
 	.listView .orderUl li .imageNameView .moneyCountView .totalmoneyCount{
 		font-size:12px;
-		color:#FFC4BE;
+		/*color:#FFC4BE;*/
 		float:left;
 		padding-left:5px;
 	}
@@ -129,7 +129,7 @@ body{
 		padding-right:10px;
 		border-bottom-style:solid;
 		border-width:2px;
-		border-color:#F5F5F5;
+		/*border-color:#F5F5F5;*/
 		text-align:center;
 	}
 	
@@ -137,7 +137,7 @@ body{
 		color:#00F;
 		border-right-style:solid;
 		border-width:2px;
-		border-color:#F5F5F5;
+		/*border-color:#F5F5F5;*/
 		padding-left:5px;
 		padding-right:10px;
 		float:left;
@@ -153,7 +153,7 @@ body{
 		color:#A4A4A4;
 		border-left-style:solid;
 		border-width:2px;
-		border-color:#F5F5F5;
+	/*	border-color:#F5F5F5;*/
 		
 		float:right;
 		padding-left:10px;
@@ -163,7 +163,7 @@ body{
 	.listView .orderUl li .operationView{
 		font-size:14px;
 		height:3px;
-		color:#90A2FF;
+		/*color:#90A2FF;*/
 		text-align:center;
 		padding-top:12px;
 		padding-bottom:12px;
@@ -181,10 +181,7 @@ body{
 		width:100%;
 		
 	}
-	/*底部空白div*/
-	.bottomBlankView{
-		height:50px;
-	}
+
 	
 	.bottomView{
 		background-color:#FFF;
@@ -203,7 +200,7 @@ body{
 	.bottomView .searchUl li{
 		border-top-style:solid;
 		border-width:2px;
-		border-color:#F5F5F5;
+	/*	border-color:#F5F5F5;*/
 		
 		padding-top:15px;
 		padding-bottom:15px;
@@ -228,7 +225,7 @@ body{
 		height:15px;
 		float:right;
 		padding-right:5px;
-		color:#F5F5F5;
+		/*color:#F5F5F5;*/
 	}
 	.bottomView .searchUl li .rightLastImage{
 		width:15px;
@@ -236,7 +233,7 @@ body{
 		padding-right:5px;
 		padding-top:3px;
 		float:right;
-		color:#F5F5F5;
+		/*color:#F5F5F5;*/
 	}
 		
 		
@@ -259,7 +256,7 @@ body{
 	.popMenuView .popUl li{
 		border-bottom-style:solid;
 		border-width:1px;
-		border-color:#F5F5F5;
+		/*border-color:#F5F5F5;*/
 		
 		padding-top:15px;
 		padding-bottom:15px;
