@@ -39,7 +39,7 @@
 	.bottomBlankView{
 		height:55px;
 	}
-	
+	 /*固定在底部的view 只有一个button*/
 	.bottomButtonView{
 		text-align:center;
 		width:100%;
@@ -50,21 +50,30 @@
 		bottom:0px;
 		background-color:#FFF;
 	}
-		
+	 /* 只有一个button*/
+	.oneButtonCellView{
+		text-align:center;
+		width:100%;
+		height:20px;
+		padding:15px 0px;
+		font-size:15px;
+		bottom:0px;
+		background-color:#FFF;
+	}
 	
-	.mavView{
+	/*.navView{
 		padding:18px 5px 15px;
 		color:#FFF;
 		text-align:center;
 		position:fixed;
 		top:0px;
 	}
-	.mavView .backImage{
+	.navView .backImage{
 		width:20px;
 		height:15px;
 		float:left;
 	}
-	.mavView titleLabel{
+	.navView titleLabel{
 		font-size:15px;
 	}
-	
+	*/

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+     body{
+	   font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	a{
+		text-decoration:none;
+	 }
+	.clear_both{
+		 clear:both;
+	}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	
+	/* css 重置 */
+	body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form { margin: 0px; padding: 0px; list-style: none; vertical-align: middle; }
+	img { border:0; margin: 0; padding: 0;   }
+	
+	header, section, footer { display: block; margin: 0; padding: 0 }
+	a{text-decoration:none;color:#000;}
+
+	/* 内容 */
+	#content{ padding:0px 0; background:#fff;  }
+	.path{ padding:0 0 5px 0px;   }
+
+	/* 效果导航 */
+	.effectNav{ margin-top:10px;  border-top:1px solid #666; background:#FFF; padding-bottom:10px;  }
+	.effectNav h3{ padding:0 10px; background:#ddd; background:#333; color:#fff;  }
+	.effectNav ul{ font-size:0;  }
+	.effectNav li{ display:inline-block; font-size:12px; padding:0 10px; margin:10px 0 0 10px;  background:#cdcdcd;  }
+
+
+	/* 本例子css -------------------------------------- */
+	.tabBox .hd{ height:40px; line-height:40px; text-align:center; padding:0 0px; font-size:16px; background:#FFF; border-top:2px solid #CECECE;  }
+	.tabBox .hd ul{ overflow:hidden; width:100%;}
+	.tabBox .hd ul li{ float:left; margin:0 0px; color:#5C5C5C; width:50%;}
+	.tabBox .hd ul .on{ border-bottom:2px solid #BA2636; color:#BA2636;  }
+	.tabBox .hd ul .on a{ display:block; /* 修复Android 4.0.x 默认浏览器当前样色无效果bug */  }
+	.tabBox .bd ul{ padding:0;  }
+	.tabBox .bd li{ height:40px; padding:15px; clear:both; border-bottom-style:solid; border-width:1px;}
+	.tabBox .bd li .customerName{
+		float:left;
+		font-size:13px;
+		padding-right:10px;
+		
+	}
+	.tabBox .bd li .orderName{
+		float:left;
+		font-size:13px;
+	}
+	.tabBox .bd li .customerName{
+		float:left;
+		font-size:13px;
+		
+	}
+	.tabBox .bd li .houseNumber{
+		float:left;
+		font-size:13px;
+		
+	}
+	.tabBox .bd li .scourceContent{
+		float:right;
+		font-size:12px;
+	}
+	.tabBox .bd li .inDate{
+		float:left;
+		font-size:12px;
+		padding-top:10px;
+	}
+	
+	
+	.tabBox .bd a{ -webkit-tap-highlight-color:rgba(0,0,0,0); }  /* 去掉链接触摸高亮 */
+	.tabBox .bd li a{ color:#555;  }
+	
+	.tabBox .bd .t{ height:85px; overflow:hidden;   }
+	.tabBox .bd .t .pic{ width:40%; float:left;    }
+	.tabBox .bd .t .con{ margin-left:130px; line-height:20px;   }
+	.tabBox .bd .t .con p{ font-size:12px; color:#999;  }
+	
+	
+	.dateView{
+		padding:12px 15px;
+		text-align:center;
+		background:#F5F5F5;
+	}
+	.dateView .leftDate{
+		font-size:13px;
+		float:left;
+	}
+	.dateView .centerDate{
+		font-size:13px;
+	}
+	.dateView .rightDate{
+		font-size:13px;
+		float:right;
+	}
+	
+	
+		

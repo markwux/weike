@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    body{
+	   font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	a{
+		text-decoration:none;
+	 }
+	.clear_both{
+		 clear:both;
+	}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */ 
+	
+	.personalMessageView{
+		background-color:#FFF;
+		margin-bottom:15px;
+	}
+	
+	.personalMessageView .oneUl{
+		margin:0px;
+		padding:0px;
+		width:100%;
+		text-align:center;
+	}
+	
+	.personalMessageView .oneUl li{
+		
+		padding:15px;
+	}
+	
+	.personalMessageView .oneUl li .rightImage{
+		width:10px;
+		height:16px;
+		padding-left:15px;
+		float:right;
+	}
+	.personalMessageView .oneUl li .rightLabel{
+		
+		font-size:13px;
+		float:right;
+	}
+	
+	
+	.personalMessageView .oneUl li .leftLabel{
+		font-size:15px;
+		float:left;
+	}
