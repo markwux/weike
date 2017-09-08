@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* CSS Document */
+
+     body{
+	   font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form { list-style: none; vertical-align: middle;}
+	a{
+		text-decoration:none;
+	 }
+	.clear_both{
+		 clear:both;
+	}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	.headerImageView{
+		position:fixed;
+		top:0px;
+		height:260px;
+		width:100%;
+	}
+	
+	.headerButtonBackView{
+		position: absolute;
+		left: 0;
+		top: 210px;
+		z-index: 0;
+		width: 100%;
+		height: 50px;
+		background-color:#000;
+		filter:Alpha(opacity=80);
+		-moz-opacity:0.6;
+		opacity: 0.6;
+		/*background-color: rgba(0,0,0,0.5);*/
+	}
+	.headerButtonView{
+		position: relative;
+		width:100%;
+		height:50px;
+	}
+	
+	.headerButtonView .leftButton{
+		position: relative;
+		width:30px;
+		height:30px;
+		float:right;
+		z-index: 1;
+		padding-right:15px;
+		padding-top:10px;
+		padding-left:20px;
+	}
+	
+	.headerButtonView .rightButton{
+		 position: relative;
+		 z-index: 1;
+		width:30px;
+		height:30px;
+		padding-top:10px;
+		float:right;
+	}
+	
+	.customerMessageView{
+		background-color:#FFF;
+		padding:15px 15px 10px 15px;
+		border-width:1px;
+		border-bottom-style:solid;
+	}
+	
+	.customerMessageView .leftImage{
+		width:45px;
+		height:45px;
+		float:left;
+	}
+	
+	.customerMessageView .helloContent{
+		padding-left:15px;
+		padding-top:5px;
+		font-size:16px;
+		float:left;
+	}
+	.customerMessageView .registerDate{
+		padding-left:15px;
+		padding-top:5px;
+		font-size:11px;
+		float:left;
+	}
+	
+	.customerMessageView .markView{
+		width:100%;
+		padding-top:5px;
+	}
+	
+	.customerMessageView .markUl{
+		margin:0;
+		padding:0;
+		text-align:center;
+	}
+	
+	
+	.customerMessageView .markUl li{
+		display:block;
+		float:left;
+		padding:5px 10px;
+		text-align:center;
+	}
+		
+	.customerMessageView .markUl li .titleContent{
+		border-width:1px;
+		border-style:solid;
+		border-radius:8px;
+		padding:0px 10px;
+		font-size:14px;
+	}
+		
+		
+	.customerCellView{
+		background-color:#FFF;
+	}
+	.customerCellView .cusHomePagesUl{
+		margin:0;
+		padding:0;
+		text-align:center;
+	}
+	
+	
+	.customerCellView .cusHomePagesUl li{
+		display:block;
+		padding:15px 15px;
+		height:20px;
+		text-align:center;
+		border-width:1px;
+		border-bottom-style:solid;
+		font-size:14px;
+	}
+		
+	.customerCellView .cusHomePagesUl li .leftTitleContent{
+		float:left;
+	}
+	
+	.customerCellView .cusHomePagesUl li .rightTitleContent{
+		float:right;
+	}
+	
+	
+	
+	
+	
