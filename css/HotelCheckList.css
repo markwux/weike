@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    body{
+	font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	a{
+		text-decoration:none;
+		}
+		.clear_both{
+			clear:both;
+		}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	.listViewHotel{
+		color:#000;
+	}
+	
+	
+	.listViewHotel .orderUlHotel{
+		margin:0px;
+		padding:0px;
+		width:100%;
+	}
+	
+	.listViewHotel .orderUlHotel li{
+		background:#FFF;
+		margin-top:10px;
+	/*	border-top-style:solid;
+		border-width:10px;*/
+		/*border-color:#F5F5F5;*/
+		padding-top:15px;
+		padding-bottom:12px;
+		list-style:none;
+		width:100%;
+		float:left;
+		display:block;
+	}
+	.listViewHotel .orderUlHotel li .orderCount{
+		padding-left:15px;
+		padding-bottom:15px;
+		font-size:15px;
+		color:#606060;
+		float:left;
+	}
+	.listViewHotel .orderUlHotel li .statusLabel{
+		padding-right:15px;
+		font-size:13px;
+		color:#FFC4BE;
+		float:right;
+	}
+	.listViewHotel .orderUlHotel li .imageNameView{
+		padding:15px;
+		height:60px;
+		border-top-style:solid;
+		border-bottom-style:solid;
+		border-width:2px;
+		border-color:#F5F5F5;
+	}
+	.listViewHotel .orderUlHotel li .imageNameView .leftImage{
+		width:80px;
+		height:60px;
+		float:left;
+	}
+	.listViewHotel .orderUlHotel li .imageNameView .rightImage{
+		width:12px;
+		height:20px;
+		float:right;
+		padding-top:20px;
+	}
+	.listViewHotel .orderUlHotel li .imageNameView .nameLabel{
+		font-size:14px;
+		/*color:#4D4D4D;*/
+		float:left;
+		padding-left:15px;
+	}
+	.listViewHotel .orderUlHotel li .imageNameView .baseCount{
+		font-size:11px;
+		/*color:#4D4D4D;*/
+		position:absolute;
+		
+		padding-left:95px;
+		padding-top:48px;
+		padding-bottom:9px;
+	}
+	
+	.listViewHotel .orderUlHotel li .imageNameView  .moneyCountView{
+		font-size:11px;
+		height:30px;
+		padding-left:95px;
+		padding-top:25px;
+		padding-right:10px;
+		position:absolute;
+	}
+	.listViewHotel .orderUlHotel li .imageNameView .moneyCountView .countTitle{
+		font-size:12px;
+		
+	}
+	.listViewHotel .orderUlHotel li .imageNameView .moneyCountView .moneyCount{
+		font-size:12px;
+		padding-left:5px;
+	}
+	.listViewHotel .orderUl li .imageNameView .moneyCountView .totalCountTitle{
+		font-size:12px;
+	
+	}
+	.listViewHotel .orderUlHotel li .imageNameView .moneyCountView .totalmoneyCount{
+		font-size:12px;
+		padding-left:10px;
+	}
+		
+	
+	.listViewHotel .orderUlHotel li .priceView{
+		padding:10px 10px 0px 10px;
+		background-color:#FFF;
+		font-size:12px;
+	}
+		
+	.listViewHotel .orderUlHotel li .priceView .checkButton{
+		border-radius:3px;
+		padding:1px 12px;
+		font-size:14px;
+		color:#FFF;
+		float:right;
+	}
+	

@@ -15,3 +15,179 @@
 	a:visited {text-decoration:none;}  /* visited link */
 	a:hover {text-decoration:none;}  /* mouse over link */
 	a:active {text-decoration:none;}  /* selected link */
+	
+	.handCellView{
+		background-color:#FFF;
+		font-size:15px;
+	}
+	
+	.handCellView .oneUl{
+		
+		margin:20px 0px;
+		padding: 0 0px 0 20px;;
+		
+	}
+	
+	.handCellView .oneUl li{
+		border-bottom-style:solid;
+		border-width:1px;
+		list-style:none;
+		display:block;
+		width:100%;
+		padding-top:10px;
+		padding-bottom:10px;
+		
+	}
+	
+	.handCellView .oneUl li .titleLabel{
+		
+	}
+	.handCellView .oneUl li .contentLabel{
+		padding-left:5px;
+		
+	}
+	
+	.handCellView .oneUl li .rightImage{
+		border-left-style:solid;
+		border-color:#F5F5F5;
+		border-width:1px;
+		padding:5px 15px;
+		width:15px;
+		height:15px;
+		float:right;
+	}
+	
+	/* start 在房单详情中使用*/
+	.handCellView .oneUl li .dateView{
+		border-left-style:solid;
+		border-color:#F5F5F5;
+		border-width:1px;
+		float:left;
+		padding-left:10px;
+		margin-left:20px;
+	}
+	.handCellView .oneUl li .dateView.dateStartTop{
+		float:left;
+		font-size:15px;
+	}
+	.handCellView .oneUl li .dateView.dateStartBottom{ 
+		float:left;
+		font-size:10px;
+	}
+	.handCellView .oneUl li .inputView{ 
+		padding-left:15px;
+		font-size:15px;
+		float:left;
+	}
+	/*end 在房单详情中使用*/
+	
+	.titleView{
+		font-size:14px;
+		padding:8px 20px;
+		border-bottom-style:solid;
+		border-width:1px;
+		background-color:#FFF;
+	}
+	
+	.orderDetail{
+		padding:10px 15px;
+		font-size:15px;
+		background-color:#FFF;
+		
+	}
+	
+	.orderDetail .oneUl{
+		margin:0px;
+		padding:0px;
+	}
+	
+	.orderDetail .oneUl li{
+		list-style:none;
+		width:100%;
+		
+	}
+		
+	.orderDetail .oneUl li .orderTitle{
+		
+		font-size:16px;
+		float:left;
+	}
+	
+	.orderDetail .oneUl li .rightImage{
+		width:13px;
+		height:16px;
+		float:right;
+	}
+	
+	.orderDetail .oneUl li .daysTitle{
+		
+		font-size:11px;
+		text-align:center;
+		background:#090;
+		border-radius:5px;
+		color:#FFF;
+		float:left;
+		margin-top:10px;
+		padding:2px 2px;
+	
+	}
+	.orderDetail .oneUl li .nameTitle{
+		
+		padding-left:50px;
+	}
+	
+	.orderDetail .oneUl li .dateTitle{
+		padding-top:8px;
+		padding-left:50px;
+	}
+	.orderDetail .oneUl li .moneysTitle{
+		padding-left:45px;
+		padding-top:8px;
+	}
+	.orderDetail .oneUl li .customerDataTitle{
+		padding-left:45px;
+		padding-top:8px;
+	}
+	
+	.roomRateView{
+		font-size:14px;
+		
+		
+	}
+	.roomRateView .oneUl{
+		margin:20px 0px;
+		padding:0px;
+		width:100%;
+	}
+	.roomRateView .oneUl li{
+		display:block;
+		list-style:none;
+		width:33%;
+		border-left-style:solid;
+		border-width:1px;
+		text-align:center;
+		float:left;
+		background-color:#F5FCFF;
+	}
+	.roomRateView .oneUl li .topLabel{
+		padding:10px 0px 5px 0px;
+		
+	}
+	.roomRateView .oneUl li .bottomLabel{
+		padding:2px 0px 10px 0px;
+	}
+	
+	.textViewContent{
+		height:80px;
+		border-style:solid;
+		border-width:2px;
+		border-color:#F5F5F5;
+		font-size:15px;
+		width:100%;
+	}
+	
+	.hindView{
+		font-size:14px;
+		padding:5px 20px;
+	}
+		

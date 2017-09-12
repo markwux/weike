@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    body{
+	font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	a{
+		text-decoration:none;
+		}
+		.clear_both{
+			clear:both;
+		}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	
+	
+	
+	.bottomViewHotelAll{
+		background-color:#FFF;
+		font-size:13px;
+		position:fixed;
+		width:100%;
+		bottom:0px;
+	}
+		
+	.bottomViewHotelAll .searchUl{
+		margin:0px;
+		padding:0px;
+		width:100%;
+		
+	}
+	.bottomViewHotelAll .searchUl li{
+		border-top-style:solid;
+		border-width:2px;
+	/*	border-color:#F5F5F5;*/
+		
+		padding-top:15px;
+		padding-bottom:15px;
+		
+		list-style:none;
+		text-align:center;
+		
+		width:25%;
+		height:15px;
+		float:left;
+		display:block;
+	}
+	
+	.bottomViewHotelAll .searchUl li .titleLabel{
+		/*float:left;*/
+		
+		color:#A4A4A4;
+		line-height:15px;
+	}
+	.bottomViewHotelAll .searchUl li .rightImage{
+		width:2px;
+		height:15px;
+		float:right;
+		padding-right:5px;
+		/*color:#F5F5F5;*/
+	}
+	.bottomViewHotelAll .searchUl li .rightLastImage{
+		width:15px;
+		height:12px;
+		padding-right:5px;
+		padding-top:3px;
+		float:right;
+		/*color:#F5F5F5;*/
+	}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    body{
+	   font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form { list-style: none; vertical-align: middle;}
+	a{
+		text-decoration:none;
+	 }
+	.clear_both{
+		 clear:both;
+	}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	
+	.customerTitleView{
+		height:20px;
+		background-color:#fff;
+		font-size:12px;
+		padding-top:5px;
+		border-bottom-style:solid;
+		border-width:1px;
+	}
+	
+	.customerTitleView .leftLabel{
+		
+		padding-left:15px;
+		
+	}
+	.customerTitleView .rightImage{
+		width:15px;
+		height:15px;
+		float:right;
+		padding-right:20px;
+	}
