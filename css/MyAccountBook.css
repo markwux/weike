@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+    body{
+	font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	a{
+		text-decoration:none;
+		}
+		.clear_both{
+			clear:both;
+		}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	.dateView{
+		background-color:#FFF;
+		padding:10px;
+		text-align:center;
+		margin-bottom:1px;
+	}
+	
+	.dateView .titleLabel{
+		font-size:12px;
+	}
+		
+	.dateView  .rightImage{
+		width:15px;
+		height:12px;
+		padding-left:20px;
+		top:60px;
+		position:absolute;
+	}
+	
+	.revenueExpenditureView{
+		background:#FFF;
+	}
+	
+	.revenueExpenditureView ul{
+		margin:0px;
+		padding:0px;
+		
+	}
+	.revenueExpenditureView ul li{
+		background:#FFF;
+		width:33.3%;
+		padding-top:20px;
+		padding-bottom:20px;
+		display:block;
+		float:left;
+	}
+	
+	.revenueExpenditureView ul li .titleLabel{
+		font-size:12px;
+		text-align:center;
+		
+	}
+	
+	.revenueExpenditureView ul li .contentLabel{
+		padding-top:8px;
+		font-size:15px;
+		text-align:center;
+	}
+	
+	.roomChargeView{
+		font-size:15px;
+	}
+	
+	.roomChargeView ul{
+		margin:0;
+		padding:0;
+	}
+	
+	.roomChargeView ul li{
+		display:block;
+		border-bottom-style:solid;
+		border-width:1px;
+		padding:10px 15px;
+		background-color:#FFF;
+	}
+		
+	.roomChargeView ul li .leftLabel{
+		float:left;
+	}
+	
+	.roomChargeView ul li .rightLabel{
+		float:right;
+	}
+	
+	
+	
+	
+	

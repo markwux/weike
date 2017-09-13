@@ -23,8 +23,11 @@
 	.borderColor{
 		border-color:#F5F5F5;
 	}
-	.backGroundBluePurpleColer{
-		background-color:#90A2FF;
+	.greenColor{
+		color:#a4d7a6;
+	}
+	.backGroundBluePurpleColer{  
+		background-color:#5264cc;
 	}
 	.backGroundColer{
 		background-color:#F5F5F5;
@@ -34,7 +37,7 @@
 	}
 	
 	.bluePurpleColor{
-		 color:#90A2FF;
+		 color:#5264cc;
 	}
 	
 	  
@@ -62,6 +65,13 @@
 		font-size:15px;
 		bottom:0px;
 		background-color:#FFF;
+	}
+	
+	.pinkBackgroundColor{
+		background-color:#fc7896;
+	}
+	.orangeRedBackgroundColor{
+		background-color:#fc967e;
 	}
 	
 	/*.navView{
