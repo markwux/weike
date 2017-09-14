@@ -6,7 +6,7 @@
 	}
 	a{
 		text-decoration:none;
-		}
+	}
 		.clear_both{
 			clear:both;
 		}
@@ -66,6 +66,18 @@
 		  float:right;
 		  padding-top:5px;
 	   }
+	   
+	    /* AddGuests页使用 */
+	    .amountCellView ul li .rightLabel{
+		  font-size:13px;
+		  border-radius:4px;
+		  border-style:solid;
+		  border-width:1px;
+		  padding:3px 8px;;
+		  float:right;
+	   }
+	   
+	   
 	   .amountCellView ul li .leftLabel{
 		   font-size:15px;
 	   }

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    body{
+	font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	a{
+		text-decoration:none;
+	}
+		.clear_both{
+			clear:both;
+		}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	.check-inRecordView{
+		font-size:15px;
+		background:#FFF;
+	}
+	.check-inRecordView ul{
+		margin:0px;
+		padding:0px;
+		background-color:#F5F5F5;
+	}
+	.check-inRecordView ul li{
+		padding:0px;
+		margin:15px 0px 0px 0px;
+		display:block;
+		background-color:#FFF;
+	}
+	
+	.check-inRecordView ul li .nameAndDateView{
+		padding:15px;
+		text-align:center;
+	}
+	
+	.check-inRecordView ul li .nameAndDateView .leftImage{
+		width:15px;
+		height:20px;
+		float:left;
+	}
+	.check-inRecordView ul li .nameAndDateView .name{
+		float:left;
+		color:#FFF;
+		padding-left:6px;
+		
+		width:120px;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		word-break:keep-all;
+		
+	}
+	.check-inRecordView ul li .nameAndDateView .date{
+		
+		color:#FFF;
+	}
+	
+	
+	.check-inRecordView ul li .roomNameView{
+		padding:15px;
+		text-align:center;
+		background-color:#FFF;
+	}
+	
+	.check-inRecordView ul li .roomNameView .leftImage{
+		width:20px;
+		height:20px;
+		float:left;
+	}
+	.check-inRecordView ul li .roomNameView .roomName{
+		float:left;
+		padding-left:6px;
+		
+	}
+	
+	
+	
+	
