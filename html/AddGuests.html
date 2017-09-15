@@ -10,10 +10,23 @@
 <link rel="stylesheet" type="text/css" href="../css/AccountsShowAndEdit.css">
 
 
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
+<script src="../jqweui/js/city-picker.js"></script>
+
+<script src="../js/AddGuests.js"></script>
+
 <title>添加宾客/编辑宾客</title>
+
 </head>
 
 <body>
+
    <div class="backGroundBluePurpleColer" style="color:#FFF; font-size:12px; padding:10px 15px; height:20px;">
       <span style=" float:right;">保存</span>
    
@@ -24,30 +37,30 @@
         <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
              <span class="leftLabel  lightGrayColor">姓名</span>
-             <input class=" inputLabel customBlackColor"placeholder="请选择" value="收入" type="text" style="border-style:none;" >
+             <input  class=" inputLabel customBlackColor"placeholder="请输入" value="收入" type="text" style="border-style:none;" >
         </li>
         <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
              <span class="leftLabel lightGrayColor">证件类型</span>
-             <input class=" inputLabel customBlackColor" disabled="disabled" placeholder="请选择" value="" type="text" style="border-style:none;" >
+             <input id ="documentsPicker" class=" inputLabel customBlackColor" placeholder="请选择" value="" type="text" style="border-style:none;" >
          </li>
         
          <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
              <span class="leftLabel lightGrayColor">证件号码</span>
-             <input class=" inputLabel customBlackColor" placeholder="请选择" value="" type="text" style="border-style:none;" >
+             <input class=" inputLabel customBlackColor" placeholder="请输入" value="" type="text" style="border-style:none;" >
          </li>
         
          <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
              <span class="leftLabel lightGrayColor">性别</span>
-             <input class=" inputLabel customBlackColor" disabled="disabled" placeholder="请选择" value="" type="text" style="border-style:none;" >
+             <input id ="sixPicker" class=" inputLabel customBlackColor" placeholder="请选择" value="" type="text" style="border-style:none;" >
          </li>
         
          <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
              <span class="leftLabel lightGrayColor">生日</span>
-             <input class=" inputLabel customBlackColor" placeholder="请选择" value="" type="text" style="border-style:none;" >
+             <input id ="birthdayPicker"  data-toggle='date'  class=" inputLabel customBlackColor" placeholder="请选择" value="" type="text" style="border-style:none;" >
         </li>
         <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
@@ -57,7 +70,7 @@
         <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
              <span class="leftLabel lightGrayColor">户籍地</span>
-             <input class=" inputLabel customBlackColor" placeholder="请选择" value="" type="text" style="border-style:none;" >
+             <input id= "address" class="inputLabel customBlackColor" placeholder="请选择" value="" type="text" style="border-style:none;" >
         </li>
         <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
@@ -84,14 +97,14 @@
              <span class="leftLabel  lightGrayColor">入住记录</span>
         </li>
         <li class="borderColor">
-             <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
+            
              <span class="leftLabel lightGrayColor">上次入住</span>
-             <input class=" inputLabel customBlackColor" disabled="disabled" placeholder="请选择" value="" type="text" style="border-style:none;" >
+             <input class=" inputLabel customBlackColor"   value="2017.09.08-2017-09-10" disabled = "disabled" type="text" style=" width:70%; border-style:none;" >
          </li>
         <li class="borderColor">
              <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
              <span class="leftLabel lightGrayColor">备注</span>
-             <input class=" inputLabel customBlackColor" disabled="disabled" placeholder="请输入" value="" type="text" style="border-style:none;" >
+             <input class=" inputLabel customBlackColor"  placeholder="请输入" value="" type="text" style="border-style:none;" >
          </li>
         
      </ul>

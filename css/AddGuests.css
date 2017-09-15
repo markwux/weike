@@ -16,4 +16,28 @@
 	a:hover {text-decoration:none;}  /* mouse over link */
 	a:active {text-decoration:none;}  /* selected link */
 	
-	
+	  .allbg
+        {
+            display: none;
+            background: #333;
+            filter: alpha(opacity=30);
+            opacity: 0.3;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .contents
+        {
+             position:absolute;
+             z-index:2;
+             color:Red;
+             background-color:White;
+             width:312px;
+             height:231px;
+        }
+        #closemyself{ float:right; margin:8px; cursor:pointer;}
+
