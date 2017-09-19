@@ -1,0 +1,194 @@
+body{
+    background-color: #f5f5f5;
+    line-height: 1;
+    padding: 0;
+}
+
+.img_top{
+    width: 100%;
+}
+
+.div_btn{
+    width: 86.7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+button {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.button_blue{
+    color: white;
+    background-color: #8c9eff;
+}
+
+.button_grey{
+    color: white;
+    background-color: #dcdcdc;
+}
+
+.button_white{
+    color: #999999;
+    background-color: white;
+}
+
+.div_num{
+    float: right;
+}
+
+.div_num img{
+    width: 11px;
+    height: 15px;
+}
+
+.div_num span{
+    color: #a7a7a7;
+    font-size: 13px;
+    position: relative;
+    bottom: 2px;
+    padding-right: 3px;
+}
+
+.span_title{
+    float: right;
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
+    padding: 5px 15px 5px 5px;
+    font-weight: bold;
+}
+
+.div_item{
+    width: 92%;
+    height: 16px;
+    padding: 16px 4%;
+    border-bottom: 1px solid #eeeeee;
+    float: left;
+    background-color: white;
+}
+
+.div_textarea{
+    display: table-cell;
+    width: 92%;
+    height: 48px;
+    padding: 0 4%;
+    border-bottom: 1px solid #eeeeee;
+    float: left;
+    background-color: white;
+    vertical-align: middle;
+}
+.div_textarea input{
+    width: 70%;
+    height: 40px;
+    line-height: 20px;
+    border: 0;
+}
+
+
+.input_edit{
+    width: 100px;
+    height: 100%;
+    border: 0px;
+    margin-left: 20px;
+}
+
+.input_edit2{
+    width: 100px;
+    height: 100%;
+    border: 0px;
+    margin-left: 50px;
+}
+
+.p_top{
+    margin:0 auto ;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+    text-overflow: clip;
+}
+
+.select_sty{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    width: 65px;
+    float: right;
+    height: 15px;
+    font-size: 15px;
+    line-height: 15px;
+    position: relative;
+    z-index: 1;
+    padding-left: 15px;
+}
+
+.select_sty option{
+    height: 15px;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.div_remark{
+    width: 92%;
+    height: 100px;
+    padding: 16px 4%;
+    border-bottom: 1px solid #eeeeee;
+    clear: both;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.div_remark textarea{
+    height: 80px;
+    background-color: white;
+    margin-left: 20px;
+    border: 0px;
+    width: 95%;
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.div_nearby{
+    padding:  15px;
+    background-color: white;
+}
+
+.div_nearby textarea{
+    height: 110px;
+    padding: 18px 5.2% 0;
+    width:89.6%;
+    margin: 0 auto;
+    border: 0.1px solid #A4A4A4 ;
+    margin-bottom: 13px;
+}
+
+.div_nearby_limit{
+    float: left;
+}
+
+.img_doubt{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    position: relative;
+    top:2px;
+}
+
+.span_num {
+    float: right;
+    position: relative;
+    top:2px;
+}
+
+.span_num strong{
+    color:#4D4D4D ;
+    font-weight: bold;
+}

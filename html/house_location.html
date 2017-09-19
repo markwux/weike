@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/vplus+.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_edit.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_details.css"/>
+    <style type="text/css">
+        html{height:100%}
+        body{height:100%;margin:0px;padding:0px}
+        #contain{height:100%;width:100%;clear: both; position: absolute;
+            top: 285px;
+            bottom: 0px;
+            left: 0px;}
+    </style>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/jquery-weui.js"></script>
+    <script type="text/javascript" src="../js/city-picker.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jKSI1A4Gs5arlZzx3Hyf5DCc">
+        /*v2.0版本的引用方式：*/src="http://api.map.baidu.com/api?v=2.0&ak=jKSI1A4Gs5arlZzx3Hyf5DCc"
+    </script>
+    <title>房屋位置</title>
+</head>
+<body>
+<div class="div_title">
+    <p>保存</p>
+</div>
+<div class="div_item">
+    <span class="color_lightgrey text_bigSize">国家</span>
+    <span class="color_black text_bigSize span_cont" style="margin-left: 50px">中国</span>
+</div>
+<div class="div_item">
+    <span class="color_lightgrey text_bigSize">城市</span>
+    <input type="text" id='city-picker' placeholder="请选择城市" class="text_bigSize color_black"
+    style="border: 0px;margin-left: 50px "/>
+    <script>
+        $("#city-picker").cityPicker({
+        });
+    </script>
+</div>
+<div class="div_item">
+    <span class="color_lightgrey text_bigSize">小区/街道</span>
+    <input type="text" class="color_black text_bigSize input_edit" style="margin-left: 16px;width:70%;vertical-align: middle;position: relative;
+    bottom: 2px;"placeholder="请输入房屋所在小区/街道"/>
+</div>
+<div class="div_item">
+    <span class="color_lightgrey text_bigSize">门牌号</span>
+    <input type="text" class="color_black text_bigSize input_edit" style="margin-left: 35px;width:70%;vertical-align: middle;position: relative;
+    bottom: 2px;"placeholder="请输入门牌号/楼号/房间号"/>
+</div>
+<div class="div_item">
+    <span class="color_lightgrey text_bigSize">房屋地址与接待地址是否一致</span>
+
+    <div class="div_num">
+        <label><input name="over" type="radio" value="" />是 </label>
+        <label><input name="over" type="radio" value="" />否 </label>
+    </div>
+</div>
+<div id="contain">
+    <script>
+        var map = new BMap.Map("contain");          // 创建地图实例
+        //  var point = new BMap.Point(121.5811424828,31.3010678543);  // 创建点坐标
+        /* map.centerAndZoom(point, 11);*/// 初始化地图，设置中心点坐标和地图级别
+        /*if(city != ""){*/
+        map.centerAndZoom("苏州",10);      // 用城市名设置地图中心点
+    </script>
+</div>
+</body>
+</html>

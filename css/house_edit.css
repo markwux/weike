@@ -1,0 +1,21 @@
+
+
+.img_icon{
+    width: 16px;
+    height: 16px;
+}
+
+.span_type{
+    color: #5264cc;
+    font-size: 15px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 2px
+}
+
+
+
+span > strong{
+    color: #5264cc;
+    font-size: 13px;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/vplus+.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/house_edit.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_details.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_list.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_table.css"/>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/jquery-weui.js"></script>
+    <title>房态</title>
+</head>
+<body>
+    <div class="div_title" style="position: fixed;top: 0px;z-index: 2">
+        <div style="float: right;margin-right: 15px">
+            <img src="../images/homeTitleArrowDown_10x6_@2x.png" style="width: 14px;height: 8px;margin-right: 10px">
+            <img src="../images/roomStatus_more_22x5_@2x.png" style="width: 25px;height: 8px">
+        </div>
+    </div>
+<div id="house_summary" style="position: fixed;top: 40px;z-index: 2;width: 100%">
+        <a>
+            <div class="li_div" style="height: 90px">
+                <img src="../images/index_bg@2x.jpg_unsliced.png" style="width: 80px;height: 60px;padding: 15px">
+                <div>
+                    <div class="div_line1"><p class="p_name">宁波四叶草+&nbsp&nbsp &nbsp(豪华大床房)</p></div>
+                    <p class="p_char" style="padding-top: 12px">1室0厅1卫|推荐入住2人|共4套</p>
+                    <div class="div_line2" style="margin-top: 12px">
+                        <img src="../images/GetCashSuccess_110x110_@2x.png">
+                        <span class="p_status">审核通过</span>
+                        <span class="p_online">（已上架）</span>
+                    </div>
+                </div>
+                <div style="float: right">
+                    <img src="../images/arrow_right_8x13_@2x.png" style="width: 8px;height: 13px;padding: 38px 15px 38px 0">
+                </div>
+            </div>
+        </a>
+</div>
+<div>
+    <table>
+        <tr style="position: fixed;top: 130px;left: 0px;z-index: 2">
+            <th class="table_title_rows">
+                <img src="../images/roomStatus_calendarBlue_18x18_@2x.png" style="width: 18px;height: 18px">
+            </th>
+            <th class="table_title_rows">
+                <div>
+                    <p class="p_house_statue">脏</p>
+                    <p class="p_house_id">040803</p>
+                </div>
+            </th>
+            <th class="table_title_rows">
+                <div>
+                    <p class="p_house_statue">脏</p>
+                    <p class="p_house_id">040804</p>
+                </div>
+            </th>
+            <th class="table_title_rows">
+                <div>
+                    <p class="p_house_statue">脏</p>
+                    <p class="p_house_id">040805</p>
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+<div style="width: 100%;height: 180px"></div>
+<table>
+<tr>
+        <th class="table_title_cols">
+            <span class="date">08-29</span>
+            <span class="week">二</span>
+            <p class="p_house_num">0间</p>
+        </th>
+        <td  class="td_blue" rowspan="2" onclick="popupwindow(this)">
+            <div>
+                <p class="p_cus_way">艺龙网</p>
+                <p class="p_cus_name">赵子敬</p>
+                <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+                <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+            </div>
+        </td>
+    <td  class="td_grey" onclick="popupwindow(this)">
+        <div>
+            <p class="p_cus_way">途家网</p>
+            <p class="p_cus_name">张阿康</p>
+            <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+            <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+        </div>
+    </td>
+    <td  class="td_blue" onclick="popupwindow(this)">
+        <div>
+            <p class="p_cus_way">天猫旗舰店</p>
+            <p class="p_cus_name">孙中山</p>
+            <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+            <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+        </div>
+    </td>
+</tr>
+    <tr>
+        <th class="table_title_cols">
+            <span class="date">08-30</span>
+            <span class="week">三</span>
+            <p class="p_house_num">0间</p>
+        </th>
+
+        <td  class="td_forbidden" onclick="popupwindow(this)">
+            <img src="../images/status_closed_20x20_@2x.png" class="img_cus_forbidden">
+        </td>
+        <td  class="td_orange" onclick="popupwindow(this)">
+            <div>
+                <p class="p_cus_way">携程旅游</p>
+                <p class="p_cus_name">李贞贤</p>
+                <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+                <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th class="table_title_cols">
+            <span class="date">08-31</span>
+            <span class="week">四</span>
+            <p class="p_house_num">0间</p>
+        </th>
+
+        <td  class="td_forbidden" onclick="popupwindow(this)">
+            <img src="../images/status_closed_20x20_@2x.png" class="img_cus_forbidden">
+        </td>
+        <td class="td_free" onclick="popupwindow(this)"></td>
+        <td  class="td_orange" onclick="popupwindow(this)">
+            <div>
+                <p class="p_cus_way">携程旅游</p>
+                <p class="p_cus_name">王文凯</p>
+                <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+                <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th class="table_title_cols">
+            <span class="date">09-01</span>
+            <span class="week">五</span>
+            <p class="p_house_num">0间</p>
+        </th>
+        <td class="td_free" onclick="popupwindow(this)"></td>
+        <td  class="td_forbidden" onclick="popupwindow(this)">
+            <img src="../images/status_closed_20x20_@2x.png" class="img_cus_forbidden">
+        </td>
+        <td  class="td_grey" onclick="popupwindow(this)">
+            <div>
+                <p class="p_cus_way">途家网</p>
+                <p class="p_cus_name">王文凯</p>
+                <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+                <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+            </div>
+        </td>
+    </tr>
+</table>
+    <div id="popup" class="weui-popup__container popup-bottom">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
+            <div style="overflow: hidden;background-color: white;" id="infos">
+            <div class="basic_info">
+                <div class="info1">
+                    <span class="text_bigSize color_bluepurple">已预约</span>
+                    <span class=" color_lightgrey" style="font-size: 11px">共一个房间</span>
+                    </br>
+                    <span class="text_smallSize color_black">卢东才</span>
+                    <span class="text_smallSize color_black">40065878942</span>
+                </div>
+                <div class="info2">
+                    <span class=" color_black" style="font-weight: bold;float: right;font-size: 17px">￥338</span>
+                    <span class="text_smallSize "style="font-size: 12px;margin-right: 5px">艺龙网</span>
+                    <p class="color_lightgrey" style="font-size: 11px;text-align: right;line-height: 20px">已收&nbsp￥338</p>
+                </div>
+            </div>
+            <div class="room_info">
+                <img src="../images/statusOrder_blueDot_8x8_@2x.png" style="width: 8px;height: 8px;float: left">
+                <div style="display: inline-block;margin-left: 15px;">
+                    <div ><p class="p_name">宁波四叶草+&nbsp;(豪华大床房)&nbsp;&nbsp;040803</p></div>
+                    <p class="p_char" style="padding-top: 12px">1室0厅1卫|推荐入住2人|共4套</p>
+                </div>
+            </div>
+                <div class="btn_sel">
+                    <div style="width: 30%;height: 100%;display: inline-block"></div>
+                    <button id="check_in" type="button">办理入住</button>
+                    <button id="change" type="button">查看/修改</button>
+                </div>
+        </div>
+            <div id="openroom" style="background-color: white;display: none; ">
+                <p>已选040803（宁波柠檬新+（豪华双床房间））</p>
+                <button type="button">取消关房</button>
+                <button type="button">取消</button>
+            </div>
+    </div>
+    </div>
+<script>
+
+        function popupwindow(e){
+            if(e.className!=null){
+                var classname = e.className;
+                if(classname == "td_free") {
+                    if (e.innerHTML == null || e.innerHTML=="") {
+                        e.style.backgroundColor = "#5264cc";
+                        var s = '  <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect">';
+                        e.innerHTML = s;
+                    }else{
+                        e.style.backgroundColor = "white";
+                        e.innerHTML = null;
+                    }
+                }else{
+                    $("#popup").popup();
+                    if(classname =="td_forbidden"){
+                        $("#openroom").show();
+                        $("#infos").hide();
+                    }else{
+                        $("#infos").show();
+                        $("#openroom").hide();
+                    }
+                }
+            }
+        }
+</script>
+</body>
+</html>

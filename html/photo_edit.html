@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content = "width=device-width, target-densitydpi=high-dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="keywords" content="seokeywords"/>
+    <meta name="description" content="seodescription"/>
+    <link rel="stylesheet" type="text/css" href="../css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/vplus+.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/photo_list.css">
+
+    <style>
+        body{
+            background-color: #22242c;
+        }
+    </style>
+
+    <style>
+        ul,li{margin:0;padding:0;}
+        @media screen and (min-width:240px) {
+            html, body{
+                font-size:9px;
+            }
+        }
+        @media screen and (min-width:320px) {
+            html, body{
+                font-size:12px;
+            }
+        }
+        @media screen and (min-width:360px) {
+            html, body{
+                font-size:13.5px;
+            }
+        }
+
+        @media screen and (min-width:375px) {
+            html, body{
+                font-size:14.0625px;
+            }
+        }
+
+        @media screen and (min-width:412px) {
+            html, body{
+                font-size:15.525px;
+            }
+        }
+
+        @media screen and (min-width:480px) {
+            html, body{
+                font-size:18px;
+            }
+        }
+
+        @media screen and (min-width:540px) {
+            html, body{
+                font-size:20.25px;
+            }
+        }
+
+        @media screen and (min-width:640px) {
+            html, body{
+                font-size:24px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            html, body{
+                font-size:28.8px;
+            }
+        }
+
+        @media screen and (min-width:960px) {
+            html, body{
+                font-size:36px;
+            }
+        }
+        div.imgbox{width:26.667rem;height:250px;overflow:hidden;margin:15px auto 0;}
+        div.imgbox span{position: absolute;top:240px;right: 10px;font-size: 1rem;color: white}
+        div.imgbox ul{clear:both;width: 80.001rem}
+        div.imgbox ul li{float:left;width:26.667rem;height:250px;overflow:hidden;text-align:center;}
+        div.imgbox ul li img{width: 26.667rem;height:250px;}
+        div.tagbox{width: 25.5rem;height: 70px;overflow: hidden;margin: 0;padding-left: 15px}
+        div.tagbox ul{clear:both;width: 32.5rem;margin: 25px 0 20px;}
+        div.tagbox ul li{float:left;width:6.5rem;height:24px;overflow:auto;text-align:center;}
+        div.tagbox ul li div{width: 5rem;height: 1rem;background-color: #393a42;font-size: 1rem;text-align: center;vertical-align: middle;color: white;padding: 5px 0}
+    </style>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/jquery-weui.js"></script>
+    <title>照片</title>
+</head>
+<body>
+<div class="div_title" style=" background-color: #22242c;position: absolute;top: 0px" >
+    <div style="float: right;margin-right: 15px">
+        <span  class="text_bigSize text_color_white" style="font-weight: bold">保存</span>
+    </div>
+</div>
+<div style="position: absolute;top:40px ;bottom:48px ;overflow: auto">
+<div class="imgbox">
+    <ul >
+        <li class="asdasd"><a href="#"><img src="http://y2.ifengimg.com/df84c07b46e03f8e/2014/0512/rdn_53708f3d8533e.jpg"></a></li>
+        <li class="asdasd"><a href="#"><img src="http://y2.ifengimg.com/df84c07b46e03f8e/2014/0512/rdn_53708f23aad06.jpg"></a></li>
+        <li class="asdasd"><a href="#"><img src="../images/homeBackground_375x240_@2x.png"></a></li>
+        <li class="asdasd"><a href="#"><img src="http://y2.ifengimg.com/df84c07b46e03f8e/2014/0512/rdn_53708f345282b.jpg"></a></li>
+    </ul>
+    <span id="page">1/4</span>
+</div>
+<div class="tagbox">
+    <ul class="tag_ul">
+        <li class="vasd"><div>1房</div></li>
+        <li class="vasd"><div>2房</div></li>
+        <li class="vasd"><div>3房</div></li>
+        <li class="vasd"><div>4房</div></li>
+        <li class="vasd"><div>5房</div></li>
+    </ul>
+</div>
+<div style="padding: 0 1rem">
+    <textarea style="height: 114px;width: 22.6rem;border: 1px solid darkgray;background-color: transparent;padding: 1rem;color: white;
+    font-size: 1rem;"
+              placeholder="请输入图片描述"></textarea>
+</div>
+</div>
+<div class="div_toolbar">
+    <div class="div_tool_item">设为封面</div>
+    <div class="div_tool_item">删除</div>
+</div>
+<script src="../js/photo_loop.js"></script>
+<script>
+    (function(){
+        /*
+         注意：$.mggScrollImg返回的scrollImg对象上有
+         next，prev，go三个方法，可以实现外部对滚动索引的控制。
+         如：scrollImg.next();//会切换到下一张图片
+         scrollImg.go(0);//会切换到第一张图片
+         */
+        var scrollImg = $.mggScrollImg('.imgbox ul',{
+            loop : true,//循环切换
+            auto : true,//自动切换
+            callback : function(ind){//这里传过来的是索引值
+                $('#page').text(ind+1+"/"+ (document.getElementsByClassName("asdasd").length-2));
+                /*var newItem=document.createElement("LI")
+                var textnode=document.createTextNode("Water")
+                newItem.appendChild(textnode)
+                var list=document.getElementsByClassName("vasd")
+                $(".tag_ul").insertBefore(newItem,list[0]);*/
+            }
+        });
+    })()
+</script>
+</body>
+</html>

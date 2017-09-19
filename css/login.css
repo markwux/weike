@@ -1,0 +1,83 @@
+body{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.div_logo{
+    margin: 52px 0 20px;
+    text-align: center;
+    height: 95px;
+}
+
+.img_logo{
+    width: 100px;
+    height: 95px;
+}
+
+input{
+    width: 100%;
+    height: 15px;
+    padding:15px 0;
+    padding-left: 2px;
+    font-size: 15px;
+    color: #b4c0f7;
+    border: 0px;
+    border-bottom: 1px #90a1e9 solid;
+    background-color:  #4b65de;
+}
+
+.input_verify{
+    width: 65%;
+    height: 15px;
+    font-size: 15px;
+    color: #b4c0f7;
+    border: 0px;
+    background-color:  #4b65de;
+}
+
+.div_verify{
+    width: 100%;
+    background-color:  #4b65de;
+    float: left;
+    border: 0px;
+    border-bottom: 1px #90a1e9 solid;
+}
+
+#btn{
+    width: 100%;
+    background-color:  #bbc6f5;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #1e2af3;
+    text-align: center;
+    height: 41px;
+}
+
+div#div1{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:-1;
+}
+
+div#div1 > img {
+    height:100%;
+    width:100%;
+    border:0;
+}
+
+.btn_verfy{
+    padding: 7px;
+    font-size: 13px;
+    color: #b4c0f7;
+    border-radius: 5px;
+    border: 2px solid #b4c0f7;
+    float: right;
+    position: relative;
+    top: 5px;
+    background-color: #4b65de;
+}

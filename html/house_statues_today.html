@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/vplus+.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_table2.css"/>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <title>今日房态</title>
+</head>
+<body>
+<select>
+    <option value="volvo">选择房间</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+</select>
+
+<select>
+    <option value="volvo">状态</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+</select>
+<div style="border: 1px solid #dcdcdc;width: 100%;height: 100px;margin-top: 10px">
+    <div class="div_itemstyle">
+        <div class="div_color" style="background: red"></div>
+        <span>维修</span>
+    </div>
+    <div class="div_itemstyle">
+        <div class="div_color" style="background: deepskyblue"></div>
+        <span>待入住</span>
+    </div>
+    <div class="div_itemstyle">
+        <div class="div_color" style="background: darkgreen"></div>
+        <span>已入住</span>
+    </div>
+    <div class="div_itemstyle">
+        <div class="div_color" style="background: springgreen"></div>
+        <span>待离店</span>
+    </div>
+    <div class="div_itemstyle">
+        <div class="div_color" style="background: rebeccapurple"></div>
+        <span>脏房</span>
+    </div>
+    <div class="div_itemstyle">
+        <img src="../images/homeIconLock_24x24_@2x.png" style="width: 24px;height: 24px;margin: 13px 15.5px">
+        <span>关房</span>
+    </div>
+</div>
+<table>
+    <tr>
+        <td style="background-color: lightgray">
+            <div>
+                <p >A1001</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+
+            </div>
+            <img class="statues_close" src="../images/homeIconLock_24x24_@2x.png">
+            <span class="span_msg">1</span>
+        </td>
+        <td style="background-color: deepskyblue">
+            <div>
+                <p >A2001</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+
+            </div>
+            <span class="span_msg">3</span>
+        </td>
+        <td style="background-color: darkgreen">
+            <div>
+                <p >A3001</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+            </div>
+            <div class="statues_others" style="background:springgreen "></div>
+            <span class="span_msg">3</span>
+        </td>
+        </tr>
+    <tr>
+        <td style="background-color: red">
+            <div>
+                <p >A1002</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+            </div>
+            <span class="span_msg">1</span>
+        </td>
+        <td style="background-color: rebeccapurple">
+            <div>
+                <p >A2002</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+            </div>
+            <span class="span_msg">2</span>
+        </td>
+        <td style="background-color: deepskyblue">
+            <div>
+                <p >A3002</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+
+            </div>
+            <span class="span_msg">3</span>
+        </td>
+    </tr>
+
+    <tr>
+
+        <td style="background-color: lightgray">
+            <div>
+                <p >A1003</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+
+            </div>
+            <img class="statues_close" src="../images/homeIconLock_24x24_@2x.png">
+            <span class="span_msg">1</span>
+        </td>
+
+        <td style="background-color: darkgreen">
+            <div>
+                <p >A2003</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+            </div>
+            <div class="statues_others" style="background:springgreen "></div>
+            <span class="span_msg">3</span>
+        </td>
+        <td style="background-color: rebeccapurple">
+            <div>
+                <p >A3003</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+            </div>
+            <span class="span_msg">2</span>
+        </td>
+    </tr>
+        <tr>
+        <td style="background-color: red">
+            <div>
+                <p >A1004</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+            </div>
+            <span class="span_msg">1</span>
+        </td>
+        <td style="background-color: rebeccapurple">
+            <div>
+                <p >A2004</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+            </div>
+            <span class="span_msg">2</span>
+        </td>
+            <td style="background-color: lightgray">
+                <div>
+                    <p >A3004</p>
+                    <p >阳光葵 大床房</p>
+                    <p >￥260</p>
+
+                </div>
+                <img class="statues_close" src="../images/homeIconLock_24x24_@2x.png">
+                <span class="span_msg">1</span>
+            </td>
+    </tr>
+    <tr>
+        <td style="background-color: lightgray">
+            <div>
+                <p >A1005</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+
+            </div>
+            <img class="statues_close" src="../images/homeIconLock_24x24_@2x.png">
+            <span class="span_msg">1</span>
+        </td>
+        <td style="background-color: deepskyblue">
+            <div>
+                <p >A2005</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+
+            </div>
+            <span class="span_msg">3</span>
+        </td>
+        <td style="background-color: darkgreen">
+            <div>
+                <p >A3005</p>
+                <p >阳光葵 大床房</p>
+                <p >￥260</p>
+            </div>
+            <div class="statues_others" style="background:springgreen "></div>
+            <span class="span_msg">3</span>
+        </td>
+    </tr>
+    <tr>
+</table>
+</body>
+</html>

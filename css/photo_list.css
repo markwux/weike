@@ -1,0 +1,75 @@
+.cover_photo{
+    width: 100%;
+    height: 250px;
+}
+
+.div_photo_content{
+    position: absolute;
+}
+
+.editorselect1{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.editorselect2{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 12.5px;
+    right: 12.5px;
+}
+
+.div_photo_list{
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+    top:290px;
+    bottom: 48px;
+    background-color: white;
+}
+
+.div_toolbar{
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    display: inline-flex;
+}
+
+table, td{
+
+    border-collapse: collapse;
+}
+
+table{
+    margin: 7.5px;
+}
+
+
+
+td{
+    width: 33.33%;
+    background-color: white;
+    height: 70px;
+    padding: 7.5px;
+    position: relative;
+}
+
+.img_photo{
+    width: 100%;
+    height: 100%;
+}
+
+.div_tool_item{
+    width: 50%;
+    height: 16px;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #5264cc;
+}
