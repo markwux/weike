@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width , minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<title>报表统计</title>
+
+<link rel="stylesheet" type="text/css" href="../css/PublicColor.css"> <!--颜色公用css-->
+
+<link rel="stylesheet" type="text/css" href="../css/popCalendar.css">
+
+
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.min.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
+
+
+
+</head>
+
+<body>
+<div class="div_title" style="position: absolute;top: 0px;z-index: 2">
+  
+</div>
+<div style="position: absolute;top: 40px;z-index: 2;width: 100%">
+<div id="house_summary" >
+    
+</div>
+<div class="title">
+   
+</div>
+<table style="width: 100%;
+    height: 29px;">
+    <tr >
+        <th class="weekend">日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th class="weekend">六</th>
+    </tr>
+</table>
+</div>
+<div style="overflow: auto;position: absolute;top: 219px;bottom:40px;z-index: 2;width: 100%">
+    <table  class="week_title">
+        <td colspan="7" class="month_title">2017年09月</td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p class="p_day">1</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p>
+            </td>
+            <td><p class="p_day">2</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+        </tr>
+        <tr>
+            <td><p class="p_day">3</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">4</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">5</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">6</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">7</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">8</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p>
+            </td>
+            <td><p class="p_day">9</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+        </tr>
+        <tr>
+            <td><p class="p_festival">教师节</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">11</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">12</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">13</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">14</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">15</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p>
+            </td>
+            <td><p class="p_day">16</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+        </tr>
+        <tr>
+            <td><p class="p_day">17</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">18</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">19</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">20</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">21</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+            <td><p class="p_day">22</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p>
+            </td>
+            <td><p class="p_day">23</p>
+                <p class="p_price">￥388</p>
+                <p class="p_num">2</p></td>
+        </tr>
+    </table>
+</div>
+<div class="div_bottom" >
+    <a href="javascript:;" class="open-popup" data-target="#changePrice">
+        <p class="p_change">修改价格</p>
+    </a>
+
+</div>
+<div id="changePrice" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+        <div class="div_item" style="padding-top: 22px;padding-bottom: 22px;height: 16px;text-align: center">
+            <a href="javascript:;" class=" close-popup"><img src="../images/shutdown@2x.png" style="width: 13px;height: 13px;float: left"></a>
+            <span class="text_bigSize color_black" style="font-weight: bolder">修改价格</span>
+            <span class="text_smallSize color_bluepurple" style="float: right;font-weight: bold">保存</span>
+        </div>
+        <div class="div_item">
+            <span class="color_black text_bigSize">开始日期：</span>
+            <span  style="margin-left: 16px" class="color_black text_smallSize">2017年9月1日</span>
+        </div>
+        <div class="div_item">
+            <span class="color_black text_bigSize">结束日期：</span>
+            <span  style="margin-left: 16px" class="color_black text_smallSize">2017年9月1日</span>
+        </div>
+        <div class="weui-cells weui-cells_checkbox" style="margin-top: 0px;width: 100%">
+            <label class="weui-cell weui-check__label" for="s11">
+                <div class="weui-cell__bd">
+                    <p class="color_black text_bigSize">一周同价</p>
+                </div>
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11">
+                    <i class="weui-icon-checked"></i>
+                </div>
+            </label>
+            </div>
+        <div style="height: 42px;padding: 0 15px;background-color: white">
+            <div class="week_price">
+                <span class="text_smallSize color_lightgrey" style="position: relative;top: 14.5px;left: 15px">一周同价</span>
+                <div style="float: right;margin: 5px 10px">
+                    <input type="number" class="input_weekprice">
+                    <span class="text_smallSize color_lightgrey" style="">CNY</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="weui-cells weui-cells_checkbox" style="margin-top: 0px;width: 100%">
+            <label class="weui-cell weui-check__label" for="s12">
+                <div class="weui-cell__bd">
+                    <p class="color_black text_bigSize">一周异价</p>
+                </div>
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s12">
+                    <i class="weui-icon-checked"></i>
+                </div>
+            </label>
+        </div>
+        <div style="width: 100%;height: 200px;background-color: white"></div>
+    </div>
+</div>
+</body>
+</html>

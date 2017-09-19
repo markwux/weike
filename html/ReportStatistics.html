@@ -10,7 +10,12 @@
 <link rel="stylesheet" type="text/css" href="../css/ReportStatistics.css">
 
 <script src="../js/TouchSlide.1.0.source.js"></script>
-<!--<script src="../js/ReportStatistics.js"></script>-->
+
+
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.min.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+
 
 
 <script src="../jqweui/lib/jquery-2.1.4.js"></script>
@@ -18,36 +23,97 @@
 <script src="../jqweui/js/swiper.js"></script>
 <script src="../jqweui/lib/fastclick.js"></script>
 
+
+<script src="../js/ReportStatistics.js"></script>
+
+
+<style> 
+#loadImage{ border:0px; width:100%; height:200px;overflow:hidden} 
+#loadImage img{max-width:100%;_width:expression(this.width > 100% ? "100%" : this.width);} 
+</style>
+
 </head>
 
 <body>
+
+                               <div class="swiper-container" style="height:200px; width:100%;" id="image_container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide" id= "loadImage">
+                                      <img src="../images/member_bg@3x.jpg_unsliced.png"  alt="">
+                                    
+                                      <!--<span style="font-size:15px; color:#000; position:absolute; bottom:20px;">你好娿</span>-->
+                                    </div>
+                                    <div class="swiper-slide" id= "loadImage"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
+                                    <div class="swiper-slide" id= "loadImage"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
+                                  </div>
+                                </div>  
+
+<div class="weui-tab">
+  <div class="weui-navbar">
+    <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+      选项一
+    </a>
+    <a class="weui-navbar__item" href="#tab2">
+      选项二
+    </a>
+  </div>
+  <div class="weui-tab__bd">
+             <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                 <div class=" dateHitView">
+                    <span class="detaLabel">2017.09.08-2017.09.12<span>
+                    <img src="../images/data_arrow_down_10x6_@3x.png" width="15" height="10" style="padding-left:10px;">
+                  </div>
+                  <div style="width:auto; height:200px; padding:10px; margin:0px;">
+                        <div class="swiper-container" id="image_container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+                             <div class="swiper-wrapper">
+                                    <div class="swiper-slide" id= "loadImage"><img src="../images/member_bg@3x.jpg_unsliced.png"  alt=""></div>
+                                    <div class="swiper-slide" id= "loadImage"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
+                                    <div class="swiper-slide" id= "loadImage"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
+                               </div>
+                          </div>  
+                    </div>
+              </div>   
+                 
+            <div id="tab2" class="weui-tab__bd-item">
+              <h1>页面二</h1>
+            </div>
+   </div>
+
+
       
-      <div id="leftTabBox" class="tabBox">
+     <!-- <div id="leftTabBox" class="tabBox">
 				<div class="hd">
 					<ul>
 						<li><a href="#">财经</a></li>
 						<li><a href="#">股票</a></li>
 					</ul>
-				</div>
-                <div class=" dateHitView">
+				</div>-->
+              <!--  <div class=" dateHitView">
                     <span class="detaLabel">2017.09.08-2017.09.12<span>
                     <img src="../images/data_arrow_down_10x6_@3x.png" width="15" height="10" style="padding-left:10px;">
                   
                 </div>
-				<div class="bd">
-						<ul>
-							<li class="borderColor" style="height:200px; padding:20px;">
-                                 <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
-                                  <div class="swiper-wrapper"  style="height:200px;">
-                                    <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" alt="" style=" height:100%"></div>
+                              <div class="swiper-container" id="image_container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" style="height:200px;" alt=""></div>
                                     <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
                                     <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
                                   </div>
-                                 </div>
-                            </li>
-						</ul>
+                                </div>  -->
+				<!--<div class="bd">
+						 
                         <ul>
-							<li class="borderColor">
+							
+                            <li class="borderColor" style="height:200px;">
+                                <div class="swiper-container" id="image_container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" style="height:200px;" alt=""></div>
+                                    <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
+                                  </div>
+                                </div>  
+                             </li>
+                             <li class="borderColor">
                                 <span class="scourceContent lightGrayColor">微信网</span>
                                 <span class="customerName deepGrayColor">李宗盛</span>
                                 <span class="orderName customBlackColor">苏州阳光葵+（豪华大床房）</span>
@@ -57,19 +123,33 @@
                                 <span class="inDate deepGrayColor">2017-10-02 14:90入住   共6晚</span>
                             </li>
                          </ul>
-						
-				</div>
-			</div>
-			<script type="text/javascript">TouchSlide({ slideCell:"#leftTabBox" });</script>
+                        
+                         <ul>
+							<li class="borderColor">
+                                <span class="scourceContent lightGrayColor">微新网</span>
+                                <span class="customerName deepGrayColor">李宗盛</span>
+                                <span class="orderName customBlackColor">苏州阳光葵+（豪华大床房）</span>
+                                <span class="houseNumber lightGrayColor">A102</span>
+                             
+                                <div style="clear:both"></div>
+                                <span class="inDate deepGrayColor">2017-10-02 14:90入住   共6晚</span>
+                            </li>
+                            <li class="borderColor">
+                                <span class="scourceContent lightGrayColor">微网</span>
+                                <span class="customerName deepGrayColor">李宗盛</span>
+                                <span class="orderName customBlackColor">苏州阳光葵+（豪华大床房）</span>
+                                <span class="houseNumber lightGrayColor">A102</span>
+                             
+                                <div style="clear:both"></div>
+                                <span class="inDate deepGrayColor">2017-10-02 14:90入住   共6晚</span>
+                            </li>
+                         </ul>
+                          
+				</div>-->
+			<!--</div>
+			<script type="text/javascript">TouchSlide({ slideCell:"#leftTabBox" });</script>-->
              
-                                <div class="swiper-container"  data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
-                                  <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
-                                    <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
-                                    <div class="swiper-slide"><img src="../images/member_bg@3x.jpg_unsliced.png" alt=""></div>
-                                  </div>
-                                 </div>
-          
+                            
 
 </body>
 </html>

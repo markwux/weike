@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    body{
+	font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	a{
+		text-decoration:none;
+		}
+		.clear_both{
+			clear:both;
+		}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	
+	.segmentView{
+		height:50px;
+		background-color:#FFF;
+		text-align:center;
+	}
+	
+	.segmentView .titleView{
+		border-bottom-style:solid;
+		border-width:1px;
+		padding-bottom:10px;
+		padding-top:10px;
+		width:50%;
+	}
+	
+	.dateHitView{
+		padding:10px 0px;
+		background-color:#FFF;
+		text-align:center;
+	}
+	
+	.dateHitView .detaLabel{
+		font-size:13px;
+	}
+	
+	.textCount{
+		text-align:center;
+		font-size:12px; 
+		padding-top:5px;"
+	}
+	
+	
+	.bottomView{
+		background-color:#FFF;
+		height:150px;
+	}
+	
+	.bottomView ul{
+		padding:0px;
+		margin:0px;
+		width:100%;
+		height:100%;
+	}
+	
+	.bottomView ul li{
+		display:block;
+		width:49%;
+		height:50px;
+		padding-top:15px;
+		padding-bottom:15px;
+		float:left;
+		border-width:1px;
+		border-bottom-style:solid;
+		border-left-style:solid;
+	}
+	
+	.bottomView ul li .leftImage{
+		width:45px;
+		height:45px;
+		float:left;
+		padding-left:20px;
+	}
+	.bottomView ul li .bottomtextView{
+		
+		text-align:center;
+	}
+	.bottomView ul li .bottomtextView .titleLabel{
+		font-size:10px;
+		padding-top:5px;
+	}
+	
+	.bottomView ul li .bottomtextView .contentLabel{
+		font-size:14px;
+		padding-top:5px;
+	}
+	
+	
+	.totalDataView{
+		background-color:#FFF;
+	}
+	
+	.totalDataView ul{
+		padding:0px;
+		margin:0px;
+		width:100%;
+	}
+	
+	.totalDataView ul li{
+		background-color:#FFF;
+		display:block;
+		text-align:center;
+		width:33.3%;
+		border-top-style:solid;
+		border-width:1px;
+		float:left;
+	}
+	
+	.totalDataView ul li .titleLabel{
+		font-size:12px;
+		padding-top:10px;
+	}
+	
+	.totalDataView ul li .contentLabel{
+		font-size:15px;
+		padding:5px 0px 10px 0px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	

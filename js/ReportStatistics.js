@@ -10,10 +10,11 @@ $(function(){ /*江南理想*/
 });
 
 function  scroller_fun(){
-	
+	         
 	//自动滚动
 				$("#image_container").swiper({
 					loop: true,
 					autoplay: 5000
 				});
 }
+

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width , minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<title>报表统计</title>
+
+<link rel="stylesheet" type="text/css" href="../css/PublicColor.css"> <!--颜色公用css-->
+
+<link rel="stylesheet" type="text/css" href="../css/ReportStatisticsList.css">
+
+
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.min.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
+<script src="../js/charts/echarts.common.min.js"></script>
+<script src="../js/ReportStatisticsList.js"></script>
+
+
+
+<style> 
+#loadImage{ border:0px; width:100%; height:300px;overflow:hidden} 
+#loadImage img{max-width:100%;_width:expression(this.width > 100% ? "100%" : this.width);} 
+</style>
+
+</head>
+
+<body style="width:100%;">
+
+   <div class="segmentView">
+   
+     <span class="titleView  bluePurpleColor" id = "houseStatistics" style="float:left; text-align:center;">房屋统计</span>
+     <span class="titleView " id = "storesStatistics" style=" float:right; text-align:center;">门店统计</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div class=" dateHitView">
+         <span class="detaLabel">2017.09.08-2017.09.12<span>
+         <img src="../images/data_arrow_down_10x6_@3x.png" width="15" height="10" style="padding-left:10px;">
+   </div>
+   <div class="swiper-container" style="height:300px; margin:30px 30px; background-color:#FFF;" id="image_container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+          <div class="swiper-wrapper">
+                <div class="swiper-slide" id= "loadImage"><img src="../images/member_bg@3x.jpg_unsliced.png" style="height:200px;" alt="">
+                    <div class="textCount customBlackColor"  style="">浏览量  898</div>
+                    <div class="textCount customBlackColor" >订单量 90</div>
+                    <div class="textCount customBlackColor" >成交量 18</div>
+                    <div class="textCount customBlackColor" >点评量  8</div>
+                </div>
+                <div class="swiper-slide" id= "loadImage"><img src="../images/member_bg@3x.jpg_unsliced.png" style="height:200px; alt="">
+                    <div class="textCount customBlackColor">浏览量  458</div>
+                    <div class="textCount customBlackColor" >订单量 23</div>
+                    <div class="textCount customBlackColor" >成交量 20</div>
+                    <div class="textCount customBlackColor" >点评量  17</div>
+                </div>
+                <div class="swiper-slide" id= "loadImage"><img src="../images/member_bg@3x.jpg_unsliced.png" style="height:200px; alt="">
+                    <div class="textCount customBlackColor" >浏览量  387</div>
+                    <div class="textCount customBlackColor" >订单量 19</div>
+                    <div class="textCount customBlackColor" >成交量 8</div>
+                    <div class="textCount customBlackColor" >点评量  8</div>
+                </div>
+           </div>
+   </div>  
+   <div class="bottomView">
+       <ul>
+          <li class="borderColor">
+             <img class="leftImage" src="../images/data_checkin_45x45_@3x.png">
+             <span class="bottomtextView">
+                 <div class="titleLabel lightGrayColor">实住间夜</div>
+                 <div class="contentLabel  customBlackColor">17</div>
+             </span>
+          </li>
+             <li class="borderColor">
+             <img class="leftImage" src="../images/data_checkin_45x45_@3x.png">
+             <span class="bottomtextView">
+                 <div class="titleLabel lightGrayColor">实住间夜</div>
+                 <div class="contentLabel customBlackColor">17</div>
+             </span>
+          </li>
+           <li class="borderColor">
+             <img class="leftImage" src="../images/data_checkin_45x45_@3x.png">
+             <span class="bottomtextView">
+                 <div class="titleLabel lightGrayColor">实住间夜</div>
+                 <div class="contentLabel customBlackColor">17</div>
+             </span>
+          </li>
+           <li style="border-width:0px;">
+             
+          </li>
+       </ul>
+   </div>
+   <div class="totalDataView">
+   
+      <ul>
+        <li class="borderColor">
+            <div class="titleLabel deepGrayColor">总收入</div>
+            <div class="contentLabel customBlackColor">1928282.0</div>
+            <div style="clear:both;"></div>
+        </li>
+         <li class="borderColor">
+            <div class="titleLabel deepGrayColor">房费收入</div>
+            <div class="contentLabel customBlackColor">832336.0</div>
+            <div style="clear:both;"></div>
+        </li>
+         <li class="borderColor">
+            <div class="titleLabel deepGrayColor">其他收入</div>
+            <div class="contentLabel customBlackColor">736.0</div>
+            <div style="clear:both;"></div>
+        </li >
+         <li class="borderColor" style="width:50%;">
+            <div class="titleLabel deepGrayColor">实住间夜</div>
+            <div class="contentLabel customBlackColor">73</div>
+            <div style="clear:both;"></div>
+        </li>
+         <li class="borderColor " style="width:50%;">
+            <div class="titleLabel deepGrayColor">入住率</div>
+            <div class="contentLabel customBlackColor">76.9%</div>
+            <div style="clear:both;"></div>
+        </li>
+   
+      </ul>
+   </div>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+   <div style="clear:both"></div>
+     <div id="lineChart" style=" width:100%; height:300px; margin-top:15px;"></div>
+    
+    <div id="pieChart" style=" width:100%; height:300px; margin-top:15px;"></div>
+    
+    
+    
+</body>
+</html>
