@@ -15,6 +15,7 @@
     <script src="../js/jquery-3.1.1.js"></script>
     <script src="../js/jquery.cookie.js"></script>
     <script src="../js/jquery-weui.js"></script>
+    <script src="../js/touch_click.js"></script>
     <title>价格</title>
 </head>
 <body>
@@ -58,30 +59,26 @@
     <table  class="week_title">
         <td colspan="7" class="month_title">2017年09月</td>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><p class="p_day">1</p>
+            <td colspan="5"></td>
+            <td onclick="clickOnFunc(this)" ><p class="p_day">1</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p>
             </td>
-            <td><p class="p_day">2</p>
+            <td onclick="clickOnFunc(this)"><p class="p_day">2</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p></td>
         </tr>
         <tr>
-            <td><p class="p_day">3</p>
+            <td onclick="clickOnFunc(this)"><p class="p_day">3</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p></td>
-            <td><p class="p_day">4</p>
+            <td onclick="clickOnFunc(this)"><p class="p_day">4</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p></td>
-            <td><p class="p_day">5</p>
+            <td onclick="clickOnFunc(this)"><p class="p_day">5</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p></td>
-            <td><p class="p_day">6</p>
+            <td onclick="clickOnFunc(this)"><p class="p_day">6</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p></td>
             <td><p class="p_day">7</p>
@@ -202,5 +199,12 @@
         <div style="width: 100%;height: 200px;background-color: white"></div>
     </div>
 </div>
+<script>
+    var tds = document.getElementsByTagName("td");
+    for(var i = 0;i<tds.length;i++){
+        tds[i].addEventListener("touchstart",touchSatrtFunc(this),false);
+        tds[i].addEventListener("touchmove",touchMoveFunc(this),false);
+    }
+</script>
 </body>
 </html>
