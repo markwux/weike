@@ -10,7 +10,17 @@
 <link rel="stylesheet" type="text/css" href="../css/PublicColor.css"> <!--颜色公用css-->
 <link rel="stylesheet" type="text/css" href="../css/CheckInOrder.css">
 
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.min.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
+
 <script src="../js/TouchSlide.1.0.source.js"></script>
+
+<script src="../js/CheckInOrder.js"></script>
 
 </head>
 
@@ -20,7 +30,7 @@
 	<div id="content">
 			<div class="dateView backGroundColer">
                <span class="rightDate"> 后一天 </span>
-               <span class="rightDate bluePurpleColor" style="padding-right:10px;"> 全部 </span>
+               <span class="rightDate bluePurpleColor" id = "CheckInOrderAllBtnId" style="padding-right:10px;"> 全部 </span>
                <span class="leftDate"> 前一天 </span>
                
                <span class="centerDate">08月30日今天</span>
@@ -36,7 +46,7 @@
 				</div>
 				<div class="bd">
 						<ul>
-							<li class="borderColor">
+							<li class="borderColor" id = "CheckInOrderId1">
                                 <span class="scourceContent lightGrayColor">微信网</span>
                                 <span class="customerName deepGrayColor">时佳</span>
                                 <span class="orderName customBlackColor">宁波阳光葵+（豪华大床房）</span>
@@ -44,7 +54,7 @@
                                 <div style="clear:both"></div>
                                 <span class="inDate deepGrayColor">2017-10-02 14:90入住   共6晚</span>
                             </li>
-							<li class="borderColor">
+							<li class="borderColor" id = "CheckInOrderId12">
                                 <span class="scourceContent lightGrayColor">微信网</span>
                                 <span class="customerName deepGrayColor">时佳</span>
                                 <span class="orderName customBlackColor">宁波阳光葵+（豪华大床房）</span>

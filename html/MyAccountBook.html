@@ -8,12 +8,24 @@
 <link rel="stylesheet" type="text/css" href="../css/PublicColor.css"> <!--颜色公用css-->
 
 <title>我的账本</title>
+
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
+<script src="../jqweui/js/city-picker.js"></script>
+
+<script src="../js/MyAccountBook.js"></script>
+
 </head>
 
 <body>
   
   <div class="backGroundBluePurpleColer" style="padding:10px 15px;">
-      <span style="float:right;color:#FFF; font-size:14px;">收支概览</span>
+      <span id = "AccountOverviewBtnId" style="float:right;color:#FFF; font-size:14px;">收支概览</span>
       <div style="clear:both;"></div>
   </div>
 
@@ -45,12 +57,12 @@
            <span class="leftLabel lightGrayColor" style="font-size:12px;">2017-09-03  星期二</span>
            <div style="clear:both"></div>
          </li>
-         <li class="borderColor">
+         <li  id = "revenueExpenditureCellId1"  class="borderColor">
            <span class="leftLabel customBlackColor">房费</span>
            <span class="rightLabel greenColor">+￥900</span>
            <div style="clear:both"></div>
          </li>
-         <li class="borderColor">
+         <li  id = "revenueExpenditureCellId2"  class="borderColor">
            <span class="leftLabel customBlackColor">房费</span>
            <span class="rightLabel greenColor">+￥900</span>
            <div style="clear:both"></div>

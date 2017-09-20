@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+<title>房客主页</title>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width , minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
@@ -9,7 +11,17 @@
 <link rel="stylesheet" type="text/css" href="../css/reviewDetail.css">
 <link rel="stylesheet" type="text/css" href="../css/CustomerHomePage.css">
 
-<title>房客主页</title>
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
+<script src="../jqweui/js/city-picker.js"></script>
+
+<script src="../js/CustomerHomeRecord.js"></script>
+
 </head>
 
 <body>
@@ -17,8 +29,8 @@
 <div  class="headerButtonBackView" style="top: 0px;"></div><!-- 半透明背景-->
 
 <div class="headerButtonView">
-    <img class="leftButton" src="../images/comment_hNormal_30x30_@2x.png">
-    <img class="rightButton" src="../images/comment_normal_30x30_@2x.png">
+    <img   class="leftButton" src="../images/comment_hNormal_30x30_@2x.png">
+    <img id = "CustomerHomePageBtnId" class="rightButton" src="../images/comment_normal_30x30_@2x.png">
 </div>
 
 <div class="titleView">

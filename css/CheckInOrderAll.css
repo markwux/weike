@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+
+     body{
+	   font:Arial, Helvetica, sans-serif 13px; margin:0px; background-color:#F5F5F5;
+	}
+	a{
+		text-decoration:none;
+	 }
+	.clear_both{
+		 clear:both;
+	}
+		
+	a:link {text-decoration:none;}      /* unvisited link */
+	a:visited {text-decoration:none;}  /* visited link */
+	a:hover {text-decoration:none;}  /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+
+    .checkInOrderAllView{
+		background-color:#FFF;	
+	}
+    
+	.checkInOrderAllView ul{
+		
+		padding:0px;
+		margin:0px;
+	}
+	
+	.checkInOrderAllView ul li{
+		display:block;
+		list-style:none;
+		font-size:14px;
+		padding:15px;
+		height:40px;
+		clear:both; 
+		border-bottom-style:solid; 
+		border-width:1px;
+	}
+	
+	.checkInOrderAllView ul li .customerName{
+		float:left;
+		font-size:13px;
+		padding-right:10px;
+		
+	}
+	.checkInOrderAllView ul li .orderName{
+		float:left;
+		font-size:13px;
+	}
+	.checkInOrderAllView ul li .customerName{
+		float:left;
+		font-size:13px;
+		
+	}
+	.checkInOrderAllView ul li.houseNumber{
+		float:left;
+		font-size:13px;
+		
+	}
+	.checkInOrderAllView ul li .scourceContent{
+		float:right;
+		font-size:12px;
+	}
+	.checkInOrderAllView ul li .inDate{
+		float:left;
+		font-size:12px;
+		padding-top:10px;
+	}
+		

@@ -23,7 +23,16 @@ $(function(){ /*江南理想*/
 	
 	
 	$("#birthdayPicker").calendar();
-			
+	
+	
+	//入住记录详情
+	$("#CheckinRecordBtnId").click(function(){
+		
+		var	url = "Check-inRecord.html?";//此处拼接内容
+          window.location.href = url;
+	});
+	
+	
 });
 
  

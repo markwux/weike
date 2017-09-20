@@ -8,7 +8,7 @@ $(function(){ /*江南理想*/
 	//chart_fun()();
 	
 	$(".totalDataView").hide();
-$("#lineChart").hide();
+   $("#lineChart").hide();
 	document.getElementById("houseStatistics").style.borderColor = "#5264cc";
 	 document.getElementById("storesStatistics").style.borderColor = "#F5F5F5";
 	 

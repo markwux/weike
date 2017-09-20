@@ -9,6 +9,16 @@
 
 <link rel="stylesheet" type="text/css" href="../css/HomePage.css">
 
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.min.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
+
+<script src="../js/HomePage.js"></script>
+
 </head>
 
 <body >
@@ -18,23 +28,24 @@
    <span class="centerButton" > 微客+（鄞州万达店) </span>
    <img class="backImage" src="../images/index_bg@3x.jpg_unsliced.png" width="100%" height="100%" >
 
-   <img  class="leftSetImage" src="../images/identity_-information_24x24_@3x.png"/>
+   <img id = "personalInformationBtnId"  class="leftSetImage" src="../images/identity_-information_24x24_@3x.png"/>
+   
    <div class="countLabelDiv" style="border-width:0px" >
      <ul class="oneUl"> 
-         <li> 
+         <li class = "toResportClass"> 
              <div class="topLabel"> 
              18993.90
              </div>
              <div class="bottomLabel" > 本月房费收入 </div>    
          </li>
          
-          <li> 
+          <li class = "toResportClass"> 
              <div class="topLabel">  
              19
              </div>
              <div class="bottomLabel">本月实住间夜</div>    
          </li>
-          <li> 
+          <li class = "toResportClass"> 
              <div class="topLabel" > 
              1.98%
              </div>
@@ -48,37 +59,39 @@
 
 <div class="collectionView"> 
   <ul class="ulColl" >
-  <li >
-    <img class="topImage" src="../images/homeIconOrder_36x36_@3x.png" >
+  <li id = "imageCell1Id" >
+    <img class="topImage"  src="../images/homeIconOrder_36x36_@3x.png">
     <div class="bottomTitle"> 订单 </div>
-     
   </li>
-  <li >
+  
+  <li id = "imageCell2Id">
     <img class="topImage" src="../images/homeIconRoomStatus_36x36_@3x.png" >
     <div class="bottomTitle"> 房态 </div>
-     
   </li>
-  <li >
+  
+  <li id = "imageCell3Id">
     <img class="topImage" src="../images/homeIconPrice_36x36_@3x.png" >
     <div class="bottomTitle"> 价格 </div>
-     
   </li>
-  <li >
+  
+  <li id = "imageCell4Id">
      <img class="topImage" src="../images/homeIconRoom_36x36_@3x.png" >
      <div class="bottomTitle"> 房屋 </div>
-     
   </li>
-  <li >
+  
+  <li id = "imageCell5Id">
     <img class="topImage" src="../images/homeIconCheckIn_36x36_@3x.png" >
     <div class="bottomTitle"> 入住单 </div>
-    
-     
   </li>
-  <li >
-  <img class="topImage" src="../images/homeIconStoryWithTujing_40x40_@3x.png" >
+  
+  <li id = "imageCell6Id">
+    <img class="topImage" src="../images/homeIconStoryWithTujing_40x40_@3x.png" >
     <div class="bottomTitle"> 点评 </div>
-    
-     
+  </li>
+  
+   <li id = "imageCell7Id">
+    <img class="topImage" src="../images/homeIconSpeed_36x36_@3x.png" >
+    <div class="bottomTitle"> 今日房态 </div>
   </li>
   
   </ul>
@@ -89,22 +102,22 @@
 
 <div class="bottomCollectionView"> 
   <ul class="ulBotColl" >
-  <li >
-    <img class="topImageBotColl" src="../image s_WK/homeIconGuest_24x24_@3x.png" >
+  <li id = "bottomCell1Id">
+    <img class="topImageBotColl" src="../images/homeIconGuest_24x24_@3x.png" >
     <div class="bottomTitleBotColl"> 宾客管理 </div>
      
   </li>
-  <li >
+  <li id = "bottomCell2Id">
     <img class="topImageBotColl" src="../images/homeIconStatistics_24x24_@3x.png" >
     <div class="bottomTitleBotColl"> 报表统计 </div>
      
   </li>
-  <li>
+  <li id = "bottomCell3Id">
     <img class="topImageBotColl" src="../images/homeIconAccountBook_24x24_@3x.png" >
     <div class="bottomTitleBotColl"> 账本 </div>
      
   </li>
-  <li>
+  <li id = "bottomCell4Id">
     <img class="topImageBotColl" src="../images/homeIconExam_24x24_@3x.png" >
     <div class="bottomTitleBotColl"> 住店审核 </div>
      
