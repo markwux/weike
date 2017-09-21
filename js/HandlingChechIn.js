@@ -23,6 +23,67 @@ $(function(){ /*江南理想*/
 		var	url = "AccountsShowAndEdit.html?";//此处拼接内容
           window.location.href = url;
 	})
+	$("#OneRoomOrderCellId").click(function(){
+		
+		var	url = "OneRoomOrder.html?";//此处拼接内容
+          window.location.href = url;
+	})
 	
+	$("#commentsSuspensImageId1").click(function(){
+		  document.getElementById("commentsSuspensImageId1").src="../images/contactflag_star_select_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId2").src="../images/contactflag_star_nor_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId3").src="../images/contactflag_star_nor_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId4").src="../images/contactflag_star_nor_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId5").src="../images/contactflag_star_nor_24x24_@2x.png";
+		   document.getElementById("gradeLabelId").innerHTML = unescape("1分");
+		   
+	})
+    $("#commentsSuspensImageId2").click(function(){
+		 document.getElementById("commentsSuspensImageId1").src="../images/contactflag_star_select_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId2").src="../images/contactflag_star_select_24x24_@2x.png";
+		 document.getElementById("commentsSuspensImageId3").src="../images/contactflag_star_nor_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId4").src="../images/contactflag_star_nor_24x24_@2x.png";
+		   document.getElementById("commentsSuspensImageId5").src="../images/contactflag_star_nor_24x24_@2x.png";
+		   document.getElementById("gradeLabelId").innerHTML = unescape("2分");
+	})
+	$("#commentsSuspensImageId3").click(function(){
+		 document.getElementById("commentsSuspensImageId1").src="../images/contactflag_star_select_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId2").src="../images/contactflag_star_select_24x24_@2x.png";
+		 document.getElementById("commentsSuspensImageId3").src="../images/contactflag_star_select_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId4").src="../images/contactflag_star_nor_24x24_@2x.png";
+		   document.getElementById("commentsSuspensImageId5").src="../images/contactflag_star_nor_24x24_@2x.png";
+		    document.getElementById("gradeLabelId").innerHTML = unescape("3分");
+	})
+	$("#commentsSuspensImageId4").click(function(){
+		 document.getElementById("commentsSuspensImageId1").src="../images/contactflag_star_select_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId2").src="../images/contactflag_star_select_24x24_@2x.png";
+		 document.getElementById("commentsSuspensImageId3").src="../images/contactflag_star_select_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId4").src="../images/contactflag_star_select_24x24_@2x.png";
+		   document.getElementById("commentsSuspensImageId5").src="../images/contactflag_star_nor_24x24_@2x.png";
+		    document.getElementById("gradeLabelId").innerHTML = unescape("4分");
+	})
+	$("#commentsSuspensImageId5").click(function(){
+		 document.getElementById("commentsSuspensImageId1").src="../images/contactflag_star_select_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId2").src="../images/contactflag_star_select_24x24_@2x.png";
+		 document.getElementById("commentsSuspensImageId3").src="../images/contactflag_star_select_24x24_@2x.png";
+		  document.getElementById("commentsSuspensImageId4").src="../images/contactflag_star_select_24x24_@2x.png";
+		   document.getElementById("commentsSuspensImageId5").src="../images/contactflag_star_select_24x24_@2x.png";
+		    document.getElementById("gradeLabelId").innerHTML = unescape("5分");
+	})
+  
 			
 });
+
+
+function onClick(){
+     
+    var a=document.getElementById("ULId");
+    var target = event.target;
+    var count=parseInt(target.getAttribute("index"));
+    for(var i=0;i<a.childElementCount;i++){
+        a.children[i].src=="../images/contactflag_star_nor_24x24_@2x.png";
+        for(var o=0;o<count;o++){
+            a.children[o].src=="../images/contactflag_star_select_24x24_@2x.png";
+        }              
+    }
+  }

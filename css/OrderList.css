@@ -229,8 +229,8 @@
 	.bottomView .searchUl li .rightLastImage{
 		width:15px;
 		height:12px;
-		padding-right:5px;
-		padding-top:3px;
+		padding-right:8px;
+		padding-top:0px;
 		float:right;
 		/*color:#F5F5F5;*/
 	}
@@ -238,13 +238,16 @@
 		
 	.popMenuView{
 		position:fixed;
-		height:200px;
+		height:180px;
 		bottom:50px;
 		right:5px;
 		width:25%;
 		float:right;
 		font-size:14px;
 		background-color:#FFF;
+		border-style:solid;
+		border-width:1px;
+		border-radius:10px;
 	}
 	.popMenuView .popUl{
 		

@@ -92,9 +92,10 @@
 	.customerMessageView .markView{
 		width:100%;
 		padding-top:5px;
+		padding-bottom:5px;
 	}
 	
-	.customerMessageView .markUl{
+/*	.customerMessageView .markUl{
 		margin:0;
 		padding:0;
 		text-align:center;
@@ -109,6 +110,17 @@
 	}
 		
 	.customerMessageView .markUl li .titleContent{
+		border-width:1px;
+		border-style:solid;
+		border-radius:8px;
+		padding:0px 10px;
+		font-size:14px;
+	}*/
+	
+	.customerMessageView  .titleContent{
+		float:left;
+		margin-left:5px;
+		margin-top:5px;
 		border-width:1px;
 		border-style:solid;
 		border-radius:8px;

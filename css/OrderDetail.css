@@ -103,3 +103,31 @@
 		height:18px;
 		padding:15px 0px;
 	}
+	
+	
+	.popupContainerView{
+		text-align:center;
+		padding:15px;
+		font-size:12px;
+		background-color:#FFF;
+	}
+	.popupContainerView .titleLabel{
+		
+		float:left;
+	}
+	.popupContainerView .dateCellView{
+		padding-top:5px;
+		text-align:center;
+		
+	}
+	.popupContainerView .sureView{
+		border-style:solid;
+		border-width:1px;
+		border-radius:5px;
+		margin-top:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		text-align:center;
+	}
+		
+	

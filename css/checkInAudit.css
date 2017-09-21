@@ -49,9 +49,14 @@
 	.cellListView .checkInAuditUl li .leftContent{
 		/*color:#0F0F0F;*/
 		padding-left:8px;
+		padding-top:2px;
 		float:left;
 	}
-	
+	.cellListView .checkInAuditUl li .inputLabel{
+		    float:left;
+			margin-left:25px;
+		   font-size:13px;
+	   }
 	.cellListView .checkInAuditUl li .rightImage{
 		padding-right:15px;
 		width:12px;

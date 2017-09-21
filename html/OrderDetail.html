@@ -17,7 +17,7 @@
 <script src="../jqweui/js/jquery-weui.js"></script>
 <script src="../jqweui/js/swiper.js"></script>
 <script src="../jqweui/lib/fastclick.js"></script>
-
+<script src="../jqweui/js/jquery.cookie.js"></script>
 
 <script src="../js/OrderDetail.js"></script>
 
@@ -85,7 +85,9 @@
     <li >
         <span class="leftTitle">预订产品:</span>
         <span class="leftContent">基础价</span>
-        <span class="rightTitle">查看每日房费</span>
+        <a href="javascript:;" class="open-popup" data-target="#everyDayRoomChargeId">
+          <span  class="rightTitle">查看每日房费</span>
+        </a>
     </li>
     
     <li>
@@ -112,7 +114,9 @@
     <li style="border-bottom-style:solid; border-color:#F5F5F5; border-width:1px;">
         <span class="leftTitle" style="font-size:15px; color:#0F0F0F; padding-bottom:12px;">押金信息:</span>
         <span class="leftContent" style="padding-top:2px;">
+        <a href="javascript:;" class="open-popup" data-target="#depositMessageId">
           <img src="../images/doubt_15x15_@3x.png" width="15" height="15">
+         </a>
         </span>
     </li>
     
@@ -177,6 +181,48 @@
  <div class="bottomBlankView" style="clear:both; "></div>
  
  <div class="checkInView" id = "checkInViewId">入住单</div>
+
+
+
+
+
+<div id = "everyDayRoomChargeId" class="weui-popup__container popup-bottom">
+  <div class="weui-popup__overlay"></div>
+  <div class="weui-popup__modal">
+        <div class="popupContainerView">
+              <div class="titleLabel">每日房间爱家</div>
+              <div style="clear:both;"></div>
+              <div class="dateCellView">
+                  <table style="width:100%;">
+                    <tr>
+                        <td style="border-style:solid; border-width:1px; border-color:#A4A4A4; width:40%;" ><div>10月3日(二)</div> </td>
+                        <td  style="border-style:solid; border-width:1px; border-color:#A4A4A4; width:40%;" > <div>￥309.88</div> </td>
+                    </tr>
+                    
+                     <tr>
+                        <td  style="border-style:solid; border-width:1px; border-color:#A4A4A4;" ><div>10月3日(二)</div> </td>
+                        <td style="border-style:solid; border-width:1px; border-color:#A4A4A4;"  > <div>￥309.88</div> </td>
+                    </tr>
+                    <tr>
+                        <td  style="border-style:solid; border-width:1px; border-color:#A4A4A4;" ><div>10月3日(二)</div> </td>
+                        <td  style="border-style:solid; border-width:1px; border-color:#A4A4A4;" > <div>￥309.88</div> </td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="sureView borderColor bluePurpleColor close-popup">知道了</div>
+        </div>
+  </div> 
+</div>
+
+<div id="depositMessageId" class="weui-popup__container">
+  <div class="weui-popup__overlay"></div>
+  <div class="weui-popup__modal">
+    你的内容放在这里...你的内容放在这里...你的内容放在这里...你的内容放在这里...
+    <div class=" bluePurpleColor close-popup"  style="border-radius:10px; font-size:16px; background-color:#CCC; padding:10px; text-align:center;">关闭</div>
+  </div>
+</div>
+
+
 
 </body>
 </html>

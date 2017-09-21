@@ -13,6 +13,14 @@ $(function(){ /*江南理想*/
           window.location.href = url;
 	});
 	
+	$("#AddGuestsAddBtnId").click(function(){
+		
+		var	url = "AddGuests.html?";//此处拼接内容
+          window.location.href = url;
+	});
+	
+	
+	
 });
 
 

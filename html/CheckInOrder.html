@@ -10,38 +10,42 @@
 <link rel="stylesheet" type="text/css" href="../css/PublicColor.css"> <!--颜色公用css-->
 <link rel="stylesheet" type="text/css" href="../css/CheckInOrder.css">
 
+
+
 <link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
 <link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.min.css">
 <link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+
+
+
 <script src="../jqweui/lib/jquery-2.1.4.js"></script>
 <script src="../jqweui/js/jquery-weui.js"></script>
 <script src="../jqweui/js/swiper.js"></script>
 <script src="../jqweui/lib/fastclick.js"></script>
 
+<script src="../js/CheckInOrder.js"></script>
 <script src="../js/TouchSlide.1.0.source.js"></script>
 
-<script src="../js/CheckInOrder.js"></script>
+
 
 </head>
-
-
 
 <body>
 	<div id="content">
 			<div class="dateView backGroundColer">
-               <span class="rightDate"> 后一天 </span>
+               <span id = "todayAfter" class="rightDate"> 后一天 </span>
                <span class="rightDate bluePurpleColor" id = "CheckInOrderAllBtnId" style="padding-right:10px;"> 全部 </span>
-               <span class="leftDate"> 前一天 </span>
+               <span id = "todayBefore" class="leftDate"> 前一天 </span>
                
-               <span class="centerDate">08月30日今天</span>
+               <span id = "todayDateId" class="centerDate">08月30日今天</span>
             </div>
 			
 			<!-- 本例主要代码 Start ================================ -->
 			<div id="leftTabBox" class="tabBox">
 				<div class="hd">
 					<ul>
-						<li><a href="#">财经</a></li>
-						<li><a href="#">股票</a></li>
+						<li><a href="#">预抵</a></li>
+						<li><a href="#">预离</a></li>
 					</ul>
 				</div>
 				<div class="bd">

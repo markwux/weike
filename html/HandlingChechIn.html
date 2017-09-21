@@ -6,6 +6,8 @@
 
 <link rel="stylesheet" type="text/css" href="../css/PublicColor.css">
 <link rel="stylesheet" type="text/css" href="../css/HandlingChechIn.css">
+<!--<link rel="stylesheet" type="text/css" href="../css/house_list.css">悬浮按钮css-->
+
 <title>办理入住</title>
 
 <link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
@@ -42,7 +44,7 @@
            <li class="borderColor">
             <span class="titleLabel lightGrayColor">订单号</span>
             <span class="contentLabel customBlackColor">7363228833</span>
-            <img class="rightImage" style="border-width:0px;" src="../images/checkin_remark_14x14_@3x.png">
+            <!--<img class="rightImage" style="border-width:0px;" src="../images/checkin_remark_14x14_@3x.png">-->
             <div style="clear:both"><div>
            </li>
         </ul>
@@ -50,7 +52,7 @@
      <div class="titleView lightGrayColor borderColor">此订单共有1个房间，2个夜晚</div>
      <div class="orderDetail">
         <ul class="oneUl"> 
-          <li>
+          <li id= "OneRoomOrderCellId">
            <span class="orderTitle customBlackColor">房单1</span>
            
            <div class="nameTitle">宁波柠檬新+（豪华双大房间）093332</div>
@@ -111,10 +113,67 @@
      </div>
      <div class="hindView lightGrayColor">更多修改请前往房态操作</div>
     
-     <div style="color:#fff; text-align:center; font-size:16px; width:95%; height:20px; padding:10px 0px; border-radius:5px; margin:0 10px; background-color:#90A2FF;">办理入住</div>
+     <div style="color:#fff; text-align:center; font-size:16px; width:95%; height:20px; padding:10px 0px;
+      border-radius:5px; margin:0 10px; background-color:#90A2FF;">办理入住</div>
      
      <div style="height:50px;"></div>
      
+     <a href="javascript:;" class="open-popup" data-target="#suspensionBtnId">
+         <div id = "" class="redius" style="position: fixed;bottom: 30px;right:15px;width: 40px;height: 40px">
+            <p>点评</p>
+         </div>
+     </a>
+
+<div id = "suspensionBtnId" class="weui-popup__container borderColor" style="background-color: rgba(0, 0, 0, 0.5);
+   z-index: 101;" >
+  <div class="weui-popup__overlay"></div>
+  <div class="weui-popup__modal" style=" background-color: rgba(0, 0, 0, 0.0);">
+        <div class="commentsSuspensionView" style="width:80%; margin-left:10%;">
+              <div class="titleLabel">评论客户印象</div>
+              <div style="clear:both;"></div>
+              <!--<img class="statImage" src="../images/contactflag_star_select_24x24_@2x.png" >
+              <img class="statImage" src="../images/contactflag_star_select_24x24_@2x.png" >
+              <img class="statImage" src="../images/contactflag_star_select_24x24_@2x.png" >
+              <img class="statImage" src="../images/contactflag_star_select_24x24_@2x.png" >
+              <img  class="statImage" src="../images/contactflag_star_nor_24x24_@2x.png" >-->
+              <div class="imageView">
+               <ul class="imageUl">
+                  <li style="padding-left:7%">
+                      <img  index="1" id = "commentsSuspensImageId1" class="imageContent" src="../images/contactflag_star_nor_24x24_@2x.png">
+                     
+                  </li>
+                  <li   style="padding-left:0%">
+                      <img  index="1" id = "commentsSuspensImageId2"  class="imageContent" src="../images/contactflag_star_nor_24x24_@2x.png">
+                     
+                  </li>
+                  <li style="padding-left:0%">
+                      <img  index="1" id = "commentsSuspensImageId3" class="imageContent" src="../images/contactflag_star_nor_24x24_@2x.png">
+                      
+                  </li>
+                  <li>
+                      <img  index="1" id = "commentsSuspensImageId4" class="imageContent" src="../images/contactflag_star_nor_24x24_@2x.png">
+                     
+                  </li>
+                  <li >
+                      <img  index="1" id = "commentsSuspensImageId5" class="imageContent" src="../images/contactflag_star_nor_24x24_@2x.png">
+                      
+                  </li>
+                   <li>
+                      <span id = "gradeLabelId" class="gradeLabel redColor" src="../images/contactflag_star_nor_24x24_@2x.png"></span>
+                  </li>
+                  
+                </ul>
+             </div>
+              <textarea  class="staffUpContentView deepGrayColor" placeholder="评价房客，帮助其他房东了解房客"></textarea>
+              
+            <div class="cancelBtn borderColor deepGrayColor close-popup">取消</div>
+            <div class="cancelBtn borderColor bluePurpleColor close-popup" style="float:right;">确定</div>
+        </div>
+  </div> 
+</div>
+
+
+
 </body>
 </html>
   

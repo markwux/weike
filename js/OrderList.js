@@ -1,4 +1,7 @@
 // JavaScript Document
+
+var showMore = false;
+
 $(function(){ /*江南理想*/
 
     document.ontouchmove = function(e){ e.preventDefault(); }; //文档禁止 touchmove事件
@@ -63,6 +66,24 @@ $(function(){ /*江南理想*/
 		var	url = "CustomerHomePage.html?";//此处拼接内容
           window.location.href = url;
 	});
+	
+	$(".popMenuView").hide();
+	
+	$("#moreBtnId").click(function(){
+		showMore = !showMore;
+		if(showMore){
+			
+			$(".popMenuView").show();
+			
+		}else{
+			$(".popMenuView").hide();
+		}
+		
+	});
+	
+	
+	
+	
 	
 	
 			

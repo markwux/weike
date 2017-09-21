@@ -8,6 +8,17 @@
 <link rel="stylesheet" type="text/css" href="../css/OneRoomOrder.css">
 <link rel="stylesheet" type="text/css" href="../css/HandlingChechIn.css">
 
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
+<script src="../jqweui/js/city-picker.js"></script>
+
+<script src="../js/OneRoomOrder.js"></script>
+
 <title>房单</title>
 </head>
 
@@ -46,7 +57,7 @@
        <img class="rightImage" src="../images/checkin_del_15x15_@3x.png">
      </div>
      
-     <div class="handCellView">
+     <div class="handCellView  customersView">
         <ul class="oneUl" style="margin:0;">
            <li class="borderColor">
             <span class="titleLabel lightGrayColor">姓名</span>
@@ -60,14 +71,15 @@
            </li>
            <li class="borderColor">
            <!--picker效果未完成-->
-            <span class="titleLabel lightGrayColor">证件类型</span>
-            <span class="contentLabel customBlackColor">身份证</span>
+            <span class="titleLabel lightGrayColor" style="float:left;">证件类型</span>
+           <!-- <span class="contentLabel customBlackColor">身份证</span>-->
+            <input id = "documentsChoseId" class="inputView" placeholder="请选择证件类型" value="" type="text" style="border-style:none" >
              <img class="rightImage borderColor" style="width:12px;" src="../images/arrow_right_8x13_@2x.png">
             <div style="clear:both"><div>
            </li>
            <li class="borderColor">
             <span class="titleLabel lightGrayColor" style="float:left;">证件类型</span>
-            <input class="inputView" placeholder="请输入证件号" value="" type="text" style="border-style:none" >
+            <input  class="inputView" placeholder="请输入证件号" value="" type="text" style="border-style:none" >
             <div style="clear:both"><div>
            </li>
            <li class="borderColor">
