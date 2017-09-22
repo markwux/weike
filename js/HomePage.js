@@ -71,7 +71,7 @@ $(function(){ /*江南理想*/
 	
 	$("#bottomCell4Id").click(function(){
 		
-		var	url = "HotelCheckAll.html?";//此处拼接内容
+		var	url = "HotelCheckList.html?";//此处拼接内容
           window.location.href = url;
 	});
 	//个人信息

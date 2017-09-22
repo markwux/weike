@@ -7,7 +7,7 @@ $(function(){ /*江南理想*/
 	
 	//chart_fun()();
 	
-	$(".totalDataView").hide();
+   $(".totalDataView").hide();
    $("#lineChart").hide();
 	document.getElementById("houseStatistics").style.borderColor = "#5264cc";
 	 document.getElementById("storesStatistics").style.borderColor = "#F5F5F5";
@@ -22,7 +22,8 @@ $(function(){ /*江南理想*/
 		storesStatistics();
 	});
 	
-	 //chart_fun();
+	//轮播图
+	scroller_fun();
 			
 });
 
@@ -40,6 +41,7 @@ function houseStatistics(){
 	
 	$(".totalDataView").hide();
 	$("#lineChart").hide();
+	$("#pieChart").hide();
 }
 
 
@@ -52,6 +54,7 @@ function storesStatistics(){
 	$(".bottomView").hide();
 	$(".totalDataView").show();
 	$("#lineChart").show();
+	$("#pieChart").show();
 	chart_fun();
 	pie_fun()
 }
