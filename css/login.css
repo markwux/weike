@@ -23,21 +23,21 @@ input{
     color: #b4c0f7;
     border: 0px;
     border-bottom: 1px #90a1e9 solid;
-    background-color:  #4b65de;
+    background-color:  transparent;
 }
 
 .input_verify{
-    width: 65%;
+    width: 50%;
     height: 15px;
     font-size: 15px;
     color: #b4c0f7;
     border: 0px;
-    background-color:  #4b65de;
+    background-color:  transparent;
 }
 
 .div_verify{
     width: 100%;
-    background-color:  #4b65de;
+    background-color:  transparent;
     float: left;
     border: 0px;
     border-bottom: 1px #90a1e9 solid;
@@ -55,7 +55,7 @@ input{
     height: 41px;
 }
 
-div#div1{
+#div1{
     position:fixed;
     top:0;
     left:0;
@@ -64,7 +64,7 @@ div#div1{
     z-index:-1;
 }
 
-div#div1 > img {
+#div1 > img {
     height:100%;
     width:100%;
     border:0;
@@ -79,5 +79,5 @@ div#div1 > img {
     float: right;
     position: relative;
     top: 5px;
-    background-color: #4b65de;
+    background-color: transparent;
 }
