@@ -18,18 +18,19 @@
     <title>房态</title>
 </head>
 <body>
-    <div class="div_title" style="position: fixed;top: 0px;z-index: 2">
+<div style="position: absolute;top: 0px;width: 100%;overflow: hidden">
+    <div class="div_title"  >
         <div style="float: right;margin-right: 15px">
             <img src="../images/homeTitleArrowDown_10x6_@2x.png" style="width: 14px;height: 8px;margin-right: 10px">
             <img src="../images/roomStatus_more_22x5_@2x.png" style="width: 25px;height: 8px">
         </div>
     </div>
-<div id="house_summary" style="position: fixed;top: 40px;z-index: 2;width: 100%">
-        <a>
+<div id="house_summary" style="width: 100%">
+        <a href="javascript:void(0);" onclick="window.location.href='./house_edit.html'" target="_blank">
             <div class="li_div" style="height: 90px">
                 <img src="../images/index_bg@2x.jpg_unsliced.png" style="width: 80px;height: 60px;padding: 15px">
                 <div>
-                    <div class="div_line1"><p class="p_name">宁波四叶草+&nbsp&nbsp &nbsp(豪华大床房)</p></div>
+                    <div class="div_line1"><p class="p_name">宁波四叶草+&nbsp(豪华大床房)</p></div>
                     <p class="p_char" style="padding-top: 12px">1室0厅1卫|推荐入住2人|共4套</p>
                     <div class="div_line2" style="margin-top: 12px">
                         <img src="../images/GetCashSuccess_110x110_@2x.png">
@@ -45,23 +46,23 @@
 </div>
 <div>
     <table>
-        <tr style="position: fixed;top: 130px;left: 0px;z-index: 2">
+        <tr >
             <th class="table_title_rows">
                 <img src="../images/roomStatus_calendarBlue_18x18_@2x.png" style="width: 18px;height: 18px">
             </th>
-            <th class="table_title_rows">
+            <th class="table_title_rows" onclick="popupwindow(this)">
                 <div>
                     <p class="p_house_statue">脏</p>
                     <p class="p_house_id">040803</p>
                 </div>
             </th>
-            <th class="table_title_rows">
+            <th class="table_title_rows" onclick="popupwindow(this)">
                 <div>
                     <p class="p_house_statue">脏</p>
                     <p class="p_house_id">040804</p>
                 </div>
             </th>
-            <th class="table_title_rows">
+            <th class="table_title_rows" onclick="popupwindow(this)">
                 <div>
                     <p class="p_house_statue">脏</p>
                     <p class="p_house_id">040805</p>
@@ -70,8 +71,8 @@
         </tr>
     </table>
 </div>
-<div style="width: 100%;height: 180px"></div>
-<table>
+</div>
+<table style="position: absolute;top: 180px;bottom: 50px">
 <tr>
         <th class="table_title_cols">
             <span class="date">08-29</span>
@@ -161,7 +162,90 @@
             </div>
         </td>
     </tr>
+    <tr>
+        <th class="table_title_cols">
+            <span class="date">09-01</span>
+            <span class="week">五</span>
+            <p class="p_house_num">0间</p>
+        </th>
+        <td class="td_free" onclick="popupwindow(this)"></td>
+        <td  class="td_forbidden" onclick="popupwindow(this)">
+            <img src="../images/status_closed_20x20_@2x.png" class="img_cus_forbidden">
+        </td>
+        <td  class="td_grey" onclick="popupwindow(this)">
+            <div>
+                <p class="p_cus_way">途家网</p>
+                <p class="p_cus_name">王文凯</p>
+                <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+                <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th class="table_title_cols">
+            <span class="date">09-01</span>
+            <span class="week">五</span>
+            <p class="p_house_num">0间</p>
+        </th>
+        <td class="td_free" onclick="popupwindow(this)"></td>
+        <td  class="td_forbidden" onclick="popupwindow(this)">
+            <img src="../images/status_closed_20x20_@2x.png" class="img_cus_forbidden">
+        </td>
+        <td  class="td_grey" onclick="popupwindow(this)">
+            <div>
+                <p class="p_cus_way">途家网</p>
+                <p class="p_cus_name">王文凯</p>
+                <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+                <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th class="table_title_cols">
+            <span class="date">09-01</span>
+            <span class="week">五</span>
+            <p class="p_house_num">0间</p>
+        </th>
+        <td class="td_free" onclick="popupwindow(this)"></td>
+        <td  class="td_forbidden" onclick="popupwindow(this)">
+            <img src="../images/status_closed_20x20_@2x.png" class="img_cus_forbidden">
+        </td>
+        <td  class="td_grey" onclick="popupwindow(this)">
+            <div>
+                <p class="p_cus_way">途家网</p>
+                <p class="p_cus_name">王文凯</p>
+                <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+                <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th class="table_title_cols">
+            <span class="date">09-01</span>
+            <span class="week">五</span>
+            <p class="p_house_num">0间</p>
+        </th>
+        <td class="td_free" onclick="popupwindow(this)"></td>
+        <td  class="td_forbidden" onclick="popupwindow(this)">
+            <img src="../images/status_closed_20x20_@2x.png" class="img_cus_forbidden">
+        </td>
+        <td  class="td_grey" onclick="popupwindow(this)">
+            <div>
+                <p class="p_cus_way">途家网</p>
+                <p class="p_cus_name">王文凯</p>
+                <img src="../images/status_isGuarantee_10x10_@2x.png" class="img_cus_sure">
+                <img src="../images/status_isDirect_6x6_@2x.png" class="img_cus_direct">
+            </div>
+        </td>
+    </tr>
 </table>
+    <div id="select_div">
+        <div>
+            <span class="color_deepgrey text_smallSize" >已选：</span>
+            <span class="color_deepgrey text_smallSize" id="select_text">1个房间，共1个间夜</span>
+        </div>
+        <button type="button" id="sure_btn">确定</button>
+    </div>
     <div id="popup" class="weui-popup__container popup-bottom">
         <div class="weui-popup__overlay"></div>
         <div class="weui-popup__modal">
@@ -193,16 +277,23 @@
                     <button id="change" type="button">查看/修改</button>
                 </div>
         </div>
-            <div id="openroom" style="background-color: white;display: none; ">
+            <div id="openroom" style="background-color: white;display: none;">
                 <p>已选040803（宁波柠檬新+（豪华双床房间））</p>
                 <button type="button">取消关房</button>
+                <button type="button">取消</button>
+            </div>
+            <div id="clearroom" style="background-color: white;display: none; ">
+                <p>已选040803（宁波柠檬新+（豪华双床房间））</p>
+                <button type="button">置净房间</button>
                 <button type="button">取消</button>
             </div>
     </div>
     </div>
 <script>
-
+        var ind1 = 0;
+        var ind2 = 0;
         function popupwindow(e){
+
             if(e.className!=null){
                 var classname = e.className;
                 if(classname == "td_free") {
@@ -210,18 +301,32 @@
                         e.style.backgroundColor = "#5264cc";
                         var s = '  <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect">';
                         e.innerHTML = s;
+                        $("#select_div").show();
+                        ind1 ++;
+                        $("#select_text").text("1个房间，"+  ind1+"个间夜") ;
                     }else{
                         e.style.backgroundColor = "white";
                         e.innerHTML = null;
+                        ind1 --;
+                        $("#select_text").text("1个房间，"+  ind1+"个间夜") ;
+                        if(ind1 <=0 ){
+                            $("#select_div").hide();
+                        }
                     }
                 }else{
                     $("#popup").popup();
                     if(classname =="td_forbidden"){
                         $("#openroom").show();
                         $("#infos").hide();
+                        $("#clearroom").hide();
+                    }else if(classname =="table_title_rows") {
+                        $("#infos").hide();
+                        $("#openroom").hide();
+                        $("#clearroom").show();
                     }else{
                         $("#infos").show();
                         $("#openroom").hide();
+                        $("#clearroom").hide();
                     }
                 }
             }

@@ -74,6 +74,12 @@ button {
     background-color: white;
 }
 
+.delete_bedtype{
+    width: 15px;
+    height: 15px;
+    float: right;
+}
+
 .div_textarea{
     display: table-cell;
     width: 92%;
@@ -191,4 +197,29 @@ button {
 .span_num strong{
     color:#4D4D4D ;
     font-weight: bold;
+}
+
+.div_chosebed_title{
+    border-bottom: 2px solid #8c9eff;
+    font-size: 15px;
+    color:#333333 ;
+    line-height: 48px;
+    height: 48px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.img_bed_selected{
+    width: 11px;
+    height: 9px;
+    float: right;
+    position: relative;
+    top:2px;
+}
+
+#slect_cont{
+    height: 294px;
+    overflow: auto;
+    width: 100%;
 }

@@ -8,9 +8,11 @@
     <link rel="stylesheet" type="text/css" href="../css/house_details.css"/>
     <link rel="stylesheet" type="text/css" href="../css/jquery-weui.css"/>
     <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/weui.min.css">
     <script src="../js/jquery-3.1.1.js"></script>
     <script src="../js/jquery.cookie.js"></script>
     <script src="../js/jquery-weui.js"></script>
+    <script src="../js/touch_click.js"></script>
 
     <title>房屋详情</title>
 </head>
@@ -71,23 +73,23 @@
         <input class="input_edit" type="number" maxlength="6" placeholder="请输入">
         <span class="color_black text_bigSize">平米</span>
     </div>
-    <div class="div_item">
+
+    <div class="div_item" id="changehousetype">
         <span class="color_lightgrey text_bigSize">户型</span>
-        <span class="color_black text_bigSize span_cont"style="padding-left: 30px">一室一厅一厨</span>
+        <span class="color_black text_bigSize span_cont"style="padding-left: 30px" id="housestyle">一室一厅一厨</span>
         <div class="div_num">
             <img src="../images/arrow_right_8x13_@2x.png">
         </div>
     </div>
     <p class="text_smallSize color_lightgrey" style="padding: 9px 0 9px 15px;clear: both;margin: 0">房屋床型</p>
-    <div>
+    <div id="bedtypeli">
     <div class="div_item">
         <span class="color_black text_bigSize">大床&nbsp2*1.5米&nbsp1</span>
-        <div class="div_num">
-            <img src="../images/guest_error_gray_14x14_@2x.png" style="width: 15px;height: 15px">
-        </div>
+        <img src="../images/guest_error_gray_14x14_@2x.png" class="delete_bedtype" onclick="delete_bedtype(this)">
     </div>
     </div>
-    <div class="div_item">
+
+    <div class="div_item" id="addbedtype">
         <img src="../images/add_gray_15x15_@2x.png" style="width: 15px;height: 15px">
         <span class="color_lightgrey text_bigSize"style="padding-left: 10px;position: relative;bottom: 1px">添加新床型</span>
     </div>
@@ -95,5 +97,197 @@
         <span class="color_lightgrey text_bigSize">房屋数量</span>
         <input class="input_edit" type="number" maxlength="6" placeholder="请输入">
     </div>
+    <div id="changeHouseStyle" class="weui-popup__container popup-bottom">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
+            <div id="changeHouse" style="display: none">
+            <div class="div_item" style="padding-top: 13px;padding-bottom: 13px;height: 14px;text-align: center">
+                <span style="float: left" class="text_smallSize color_lightgrey">房屋户型</span>
+                <span class="text_smallSize color_bluepurple" style="float: right;font-weight: bold" id="certain">确定</span>
+            </div>
+            <div class="div_item">
+                <span class="color_lightgrey text_bigSize">卧室</span>
+                <div class="div_num">
+                    <img src="../images/stepper_minus_15x15_@2x.png" style="width: 15px;height: 15px" id="minus1">
+                    <span class="text_smallSize color_deepgrey" id="bedroom">2</span>
+                    <img src="../images/stepper_plus_15x15_@2x.png" style="width: 15px;height: 15px" id="plus1">
+                </div>
+            </div>
+            <div class="div_item">
+                <span class="color_lightgrey text_bigSize">客厅</span>
+                <div class="div_num">
+                    <img src="../images/stepper_minus_15x15_@2x.png" style="width: 15px;height: 15px" id="minus2">
+                    <span class="text_smallSize color_deepgrey" id="keting">2</span>
+                    <img src="../images/stepper_plus_15x15_@2x.png" style="width: 15px;height: 15px" id="plus2">
+                </div>
+            </div>
+            <div class="div_item">
+                <span class="color_lightgrey text_bigSize">卫生间</span>
+                <div class="div_num">
+                    <img src="../images/stepper_minus_15x15_@2x.png" style="width: 15px;height: 15px" id="minus3">
+                    <span class="text_smallSize color_deepgrey" id="bathroom">2</span>
+                    <img src="../images/stepper_plus_15x15_@2x.png" style="width: 15px;height: 15px" id="plus3">
+                </div>
+            </div>
+            <div class="div_item">
+                <span class="color_lightgrey text_bigSize">厨房</span>
+                <div class="div_num">
+                    <img src="../images/stepper_minus_15x15_@2x.png" style="width: 15px;height: 15px" id="minus4">
+                    <span class="text_smallSize color_deepgrey" id="kitchen">2</span>
+                    <img src="../images/stepper_plus_15x15_@2x.png" style="width: 15px;height: 15px" id="plus4">
+                </div>
+            </div>
+            <div class="div_item">
+                <span class="color_lightgrey text_bigSize">书房</span>
+                <div class="div_num">
+                    <img src="../images/stepper_minus_15x15_@2x.png" style="width: 15px;height: 15px" id="minus5">
+                    <span class="text_smallSize color_deepgrey" id="bookroom">2</span>
+                    <img src="../images/stepper_plus_15x15_@2x.png" style="width: 15px;height: 15px" id="plus5">
+                </div>
+            </div>
+            <div class="div_item">
+                <span class="color_lightgrey text_bigSize">阳台</span>
+                <div class="div_num">
+                    <img src="../images/stepper_minus_15x15_@2x.png" style="width: 15px;height: 15px" id="minus6">
+                    <span class="text_smallSize color_deepgrey" id="outroom">2</span>
+                    <img src="../images/stepper_plus_15x15_@2x.png" style="width: 15px;height: 15px" id="plus6">
+                </div>
+            </div>
+        </div>
+            <div id="addbed">
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        //数据导入 添加新床型 弹窗内容 床型，尺寸，数量列表
+        var string = '<div class="div_item" style="padding-top: 13px;padding-bottom: 13px;height: 14px;text-align: center;background-color: #f5f5f5"> <span style="float: left" class="text_smallSize color_lightgrey">房屋床型</span> </div>'+
+                '<div style="height: 50px;width: 100%;float: left;background-color: white;border-bottom: 1px solid #eeeeee;">'+
+                '<div class=" div_chosebed_title" id="bedtype" style="margin-left: 15px"onclick="click_title(this)" >请选择</div> <div class=" div_chosebed_title" id="bedsize" style="display: none"onclick="click_title(this)" >请选择</div> <div class=" div_chosebed_title" id="bednum"  style="display: none"onclick="click_title(this)">请选择</div> </div>'+
+                '<div id="slect_cont"> <ul id="type_cont"> <li onclick="clickitem(this)"> <div class="div_item"><span style="float: left" class="text_smallSize color_lightgrey">大床</span> </div>'+
+               '</li> <li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">圆床</span> </div> </li>'+
+               ' <li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">双人床</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">单人床</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">沙发床</span> </div> </li> </ul>'+
+                '<ul id="size_cont" style="display: none"> <li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">2*1.5米</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">2*1.8米</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">2*2米</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">1.8*1.5米</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">2*1.6米</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">2.2*2.2米</span> </div> </li> </ul>'+
+                '<ul id="num_cont" style="display: none"> <li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">1</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">2</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">3</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">4</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">5</span> </div> </li>'+
+                '<li onclick="clickitem(this)"> <div class="div_item"> <span style="float: left" class="text_smallSize color_lightgrey">6</span> </div> </li></ul></div>'
+
+        //每次点击添加新床型都会打开新的
+        $("#addbedtype").click(function(){
+            $("#changeHouse").hide();
+            $("#addbed").empty();
+            $("#addbed").append(string);
+            $("#addbed").show();
+            $("#changeHouseStyle").popup();
+        })
+
+
+        $("#changehousetype").click(function(){
+            $("#addbed").empty();
+            $("#addbed").hide();
+            $("#changeHouse").show();
+            $("#changeHouseStyle").popup();
+        })
+
+
+
+
+
+        $("#minus1").click(function(){
+            var value = parseInt($("#bedroom").text());
+            if(value>1){
+                $("#bedroom").text(value-1);
+            }
+        });
+        $("#plus1").click(function(){
+            var value = parseInt($("#bedroom").text());
+                $("#bedroom").text(value + 1);
+        });
+        $("#minus2").click(function(){
+            var value = parseInt($("#keting").text());
+            if(value>0){
+                $("#keting").text(value-1);
+            }
+        });
+        $("#plus2").click(function(){
+            var value = parseInt($("#keting").text());
+            $("#keting").text(value + 1);
+        });
+        $("#minus3").click(function(){
+            var value = parseInt($("#bathroom").text());
+            if(value>0){
+                $("#bathroom").text(value-1);
+            }
+        });
+        $("#plus3").click(function(){
+            var value = parseInt($("#bathroom").text());
+            $("#bathroom").text(value + 1);
+        });
+        $("#minus4").click(function(){
+            var value = parseInt($("#kitchen").text());
+            if(value>0){
+                $("#kitchen").text(value-1);
+            }
+        });
+        $("#plus4").click(function(){
+            var value = parseInt($("#kitchen").text());
+            $("#kitchen").text(value + 1);
+        });
+        $("#minus5").click(function(){
+            var value = parseInt($("#bookroom").text());
+            if(value>0){
+                $("#bookroom").text(value-1);
+            }
+        });
+        $("#plus5").click(function(){
+            var value = parseInt($("#bookroom").text());
+            $("#bookroom").text(value + 1);
+        });
+        $("#minus6").click(function(){
+            var value = parseInt($("#outroom").text());
+            if(value>0){
+                $("#outroom").text(value-1);
+            }
+        });
+        $("#plus6").click(function(){
+            var value = parseInt($("#outroom").text());
+            $("#outroom").text(value + 1);
+        });
+
+        $("#certain").click(function(){
+            var string = $("#bedroom").text()+"室";
+            if($("#keting").text() != "0"){
+                string +=$("#keting").text()+"厅";
+            }
+            if($("#bathroom").text() != "0"){
+                string += $("#bathroom").text()+"卫";
+            }
+            if($("#kitchen").text() != "0"){
+                string += $("#kitchen").text()+"厨";
+            }
+            if($("#bookroom").text() != "0"){
+                string += $("#bookroom").text()+"书房";
+            }
+            if($("#outroom").text() != "0"){
+                string += $("#outroom").text()+"阳台";
+            }
+            $("#housestyle").text(string);
+            $.closePopup();
+        });
+
+    </script>
 </body>
 </html>

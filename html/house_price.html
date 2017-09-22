@@ -23,20 +23,20 @@
     <div style="float: right;margin-right: 15px">
         <img src="../images/homeTitleArrowDown_10x6_@2x.png" style="width: 14px;height: 8px;margin-right: 10px">
         <a href="javascript:void(0);" onclick="window.location.href='./house_price_more.html'" target="_blank">
-        <img src="../images/roomStatus_more_22x5_@2x.png" style="width: 25px;height: 8px"></a>
+        <span class="text_smallSize text_color_white">更多价格</span></a>
     </div>
 </div>
 <div style="position: absolute;top: 40px;z-index: 2;width: 100%">
 <div id="house_summary" >
-    <a>
+    <a href="javascript:void(0);" onclick="window.location.href='./house_edit.html'" target="_blank">
         <div class="li_div" style="height: 90px;background: white">
             <img src="../images/index_bg@2x.jpg_unsliced.png" style="width: 80px;height: 60px;padding: 15px">
             <div>
                 <div class="div_line1"><p class="p_name">宁波四叶草+&nbsp&nbsp &nbsp(豪华大床房)</p></div>
-                <p class="p_char" style="padding-top: 12px">1室0厅1卫|推荐入住2人|共4套</p>
+                <p class="p_char" style="padding-top: 12px">ID:(HN266807)&nbsp&nbsp共4套</p>
                 <div class="div_line2" style="margin-top: 12px">
-                    <img src="../images/GetCashSuccess_110x110_@2x.png">
-                    <span class="p_status">审核通过</span>
+                    <span class="text_smallSize color_lightgrey">币种：</span>
+                    <span class="text_smallSize color_lightgrey">CNY</span>
                     <span class="p_online">（已上架）</span>
                 </div>
             </div>
@@ -64,24 +64,30 @@
             <td onclick="clickOnFunc(this)" ><p class="p_day">1</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p>
+                <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect2">
             </td>
             <td onclick="clickOnFunc(this)"><p class="p_day">2</p>
                 <p class="p_price">￥388</p>
-                <p class="p_num">2</p></td>
+                <p class="p_num">2</p>
+                <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect2"></td>
         </tr>
         <tr>
             <td onclick="clickOnFunc(this)"><p class="p_day">3</p>
                 <p class="p_price">￥388</p>
-                <p class="p_num">2</p></td>
+                <p class="p_num">2</p>
+                <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect2"></td>
             <td onclick="clickOnFunc(this)"><p class="p_day">4</p>
                 <p class="p_price">￥388</p>
-                <p class="p_num">2</p></td>
+                <p class="p_num">2</p>
+                <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect2"></td>
             <td onclick="clickOnFunc(this)"><p class="p_day">5</p>
                 <p class="p_price">￥388</p>
-                <p class="p_num">2</p></td>
+                <p class="p_num">2</p>
+                <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect2"></td>
             <td onclick="clickOnFunc(this)"><p class="p_day">6</p>
                 <p class="p_price">￥388</p>
-                <p class="p_num">2</p></td>
+                <p class="p_num">2</p>
+                <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect2"></td>
             <td><p class="p_day">7</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p></td>
@@ -89,9 +95,9 @@
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p>
             </td>
-            <td><p class="p_day">9</p>
-                <p class="p_price">￥388</p>
-                <p class="p_num">2</p></td>
+            <td class="td_useless"><p class="p_day_useless">9</p>
+                <p class="p_price_useless">￥388</p>
+                <p class="p_num_useless">2</p></td>
         </tr>
         <tr>
             <td><p class="p_festival">教师节</p>
@@ -100,15 +106,14 @@
             <td><p class="p_day">11</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p></td>
-            <td><p class="p_day">12</p>
-                <p class="p_price">￥388</p>
-                <p class="p_num">2</p></td>
+            <td class="td_useless"><p class="p_festival_useless">阿苏节</p>
+                <p class="p_price_useless">￥388</p>
+                <p class="p_num_useless">2</p></td>
             <td><p class="p_day">13</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p></td>
-            <td><p class="p_day">14</p>
-                <p class="p_price">￥388</p>
-                <p class="p_num">2</p></td>
+            <td class="td_useless"><p class="p_day_useless">14</p>
+                </td>
             <td><p class="p_day">15</p>
                 <p class="p_price">￥388</p>
                 <p class="p_num">2</p>
@@ -144,7 +149,17 @@
     </table>
 </div>
 <div class="div_bottom" >
-    <a href="javascript:;" class="open-popup" data-target="#changePrice">
+    <div id="statues_div">
+        <img src="../images/calender_n_icon_15x15_@1x.png">
+        <span>可售</span>
+        <img src="../images/calender_un_icon_15x15_@1x.png">
+        <span>不可售</span>
+        <img src="../images/price_outdate_14x14_@2x.png">
+        <span>规则过期</span>
+        <img src="../images/slash_icon_15x15_@1x.png">
+        <span>无价格</span>
+    </div>
+    <a href="javascript:;" class="open-popup" data-target="#changePrice" style="display: none" id="change_div">
         <p class="p_change">修改价格</p>
     </a>
 

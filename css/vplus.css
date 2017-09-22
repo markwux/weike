@@ -84,3 +84,7 @@ input:focus { outline: none; }
 .text_smallSize{
     font-size: 13px;
 }
+
+textarea{
+    outline: none;
+}

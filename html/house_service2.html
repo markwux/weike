@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对接待客户的要求</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/vplus.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_details.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/weui.min.css">
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/jquery-weui.js"></script>
+</head>
+<body>
+<div class="div_title">
+    <p>保存</p>
+</div>
+<p class="text_smallSize color_lightgrey"style="padding: 10px 0 10px 15px;line-height: 15px">您是否接待以下年龄的房客</p>
+<div class="weui-cells weui-cells_checkbox" style="margin-top: 0px">
+    <label class="weui-cell weui-check__label" for="s11">
+        <div class="weui-cell__bd">
+            <p class="color_deepgrey text_bigSize">儿童（0-12岁）</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" class="weui-check" name="checkbox1" id="s11">
+            <i class="weui-icon-checked"></i>
+        </div>
+
+    </label>
+    <label class="weui-cell weui-check__label" for="s12">
+        <div class="weui-cell__bd ">
+            <p class="color_deepgrey text_bigSize">老人（65岁以上）</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+            <i class="weui-icon-checked"></i>
+        </div>
+    </label>
+</div>
+<p class="text_smallSize color_lightgrey"style="padding: 10px 0 10px 15px;line-height: 15px">可接待性别</p>
+<div class="weui-cells weui-cells_checkbox" style="margin-top: 0px">
+    <label class="weui-cell weui-check__label" for="s13">
+        <div class="weui-cell__bd">
+            <p class="color_deepgrey text_bigSize">男</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" class="weui-check" name="checkbox1" id="s13">
+            <i class="weui-icon-checked"></i>
+        </div>
+
+    </label>
+    <label class="weui-cell weui-check__label" for="s14">
+        <div class="weui-cell__bd ">
+            <p class="color_deepgrey text_bigSize">女</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s14">
+            <i class="weui-icon-checked"></i>
+        </div>
+    </label>
+</div>
+<p class="text_smallSize color_lightgrey"style="padding: 10px 0 10px 15px;line-height: 15px">付款能使用</p>
+<div class="weui-cells weui-cells_checkbox" style="margin-top: 0px">
+    <label class="weui-cell weui-check__label" for="s15">
+        <div class="weui-cell__bd">
+            <p class="color_deepgrey text_bigSize">银联标识信用卡</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" class="weui-check" name="checkbox1" id="s15">
+            <i class="weui-icon-checked"></i>
+        </div>
+
+    </label>
+    <label class="weui-cell weui-check__label" for="s16">
+        <div class="weui-cell__bd ">
+            <p class="color_deepgrey text_bigSize">外卡信用卡</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s16">
+            <i class="weui-icon-checked"></i>
+        </div>
+    </label>
+</div>
+<p class="text_smallSize color_lightgrey"style="padding: 10px 0 10px 15px;line-height: 15px">允许房客</p>
+<div class="weui-cells weui-cells_checkbox" style="margin-top: 0px">
+    <label class="weui-cell weui-check__label" for="s17">
+        <div class="weui-cell__bd">
+            <p class="color_deepgrey text_bigSize">是否允许房客吸烟</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" class="weui-check" name="checkbox1" id="s17">
+            <i class="weui-icon-checked"></i>
+        </div>
+
+    </label>
+    <label class="weui-cell weui-check__label" for="s18">
+        <div class="weui-cell__bd ">
+            <p class="color_deepgrey text_bigSize">是否允许房客带宠物</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s18">
+            <i class="weui-icon-checked"></i>
+        </div>
+    </label>
+    <label class="weui-cell weui-check__label" for="s19">
+        <div class="weui-cell__bd ">
+            <p class="color_deepgrey text_bigSize">是否允许房客做饭</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s19">
+            <i class="weui-icon-checked"></i>
+        </div>
+    </label>
+    <label class="weui-cell weui-check__label" for="s20">
+        <div class="weui-cell__bd ">
+            <p class="color_deepgrey text_bigSize">是否允许房客聚会</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s20">
+            <i class="weui-icon-checked"></i>
+        </div>
+    </label>
+    <label class="weui-cell weui-check__label" for="s21">
+        <div class="weui-cell__bd ">
+            <p class="color_deepgrey text_bigSize">是否允许房客加床</p>
+        </div>
+        <div class="weui-cell__hd">
+            <input type="checkbox" name="checkbox1" class="weui-check" id="s21">
+            <i class="weui-icon-checked"></i>
+        </div>
+    </label>
+</div>
+</body>
+</html>

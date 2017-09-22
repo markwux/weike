@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>费用说明</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/vplus.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_details.css"/>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/jquery-weui.js"></script>
+</head>
+<body>
+<div class="div_title">
+    <p>保存</p>
+</div>
+<div class="div_nearby">
+    <textarea class="text_bigSize color_deepgrey"  id="input_cont" placeholder="请输入费用说明吧"
+              onmousemove="conWrite('input_cont',100)"
+              onmousedown="conWrite('input_cont',100)"
+              oninput="conWrite('input_cont',100)"
+              onKeyUp="conWrite('input_cont',100)"
+              onpropertychange="conWrite('input_cont',100)"></textarea>
+    <div >
+        <span class="span_num text_smallSize color_lightgrey"><strong id="input_num">0</strong>/100</span>
+        <script>
+            function conWrite(obj,size)
+            {
+                if (document.getElementById(obj) != null)
+                {
+                    var length = size - document.getElementById(obj).value.length;
+
+                    if (length >= 0)
+                    {
+                        if(obj == "input_cont"){
+                            $("#input_num").text(document.getElementById(obj).value.length);
+                        }
+                    }
+                    else
+                    {
+                        if(document.getElementById(obj).value.length>100) document.getElementById(obj).value=document.getElementById(obj).value.substr(0,100);
+                    }
+                }
+            }
+        </script>
+    </div>
+</div>
+</body>
+</html>
