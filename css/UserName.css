@@ -16,6 +16,7 @@
 	a:active {text-decoration:none;}  /* selected link */ 
 
 	.cellNameView{
+		margin-top:15px;
 		background-color:#FFF;
 		padding:15px;
 		
@@ -27,6 +28,7 @@
 	
 	.cellNameView .leftInput{
 		padding-left:15px;
-		font-size:15px;
+		font-size:14px;
 		float:left;
+		padding-top:1px;
 	}
