@@ -1,6 +1,8 @@
 // JavaScript Document
 
 
+var houseNumber = 1;
+
 $(function(){ /*江南理想*/
 
     document.ontouchmove = function(e){ e.preventDefault(); }; //文档禁止 touchmove事件
@@ -8,6 +10,19 @@ $(function(){ /*江南理想*/
 	$("#orderStateId").click(function(){
 		documentsPick_fun();
 		
+	});
+	
+	$("#reductionId").click(function(){
+		
+		if(houseNumber > 1){
+			houseNumber -= 1;
+		}
+		$("#houseNumberId").html(houseNumber);
+	});
+	
+	$("#additionId").click(function(){
+		houseNumber += 1;
+		$("#houseNumberId").html(houseNumber);
 	});
 	
 });

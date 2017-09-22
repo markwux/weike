@@ -45,7 +45,7 @@
     <li class="borderColor">
         <span class="leftTitle  lightGrayColor">订单状态</span>
       <!--  <span class="leftContent customBlackColor">已入住</span>-->
-         <input id = "orderStateId"  class=" inputLabel customBlackColor"placeholder="请输入" value="已入住" type="text" style="border-style:none;" >
+         <input id = "orderStateId"  class=" inputLabel customBlackColor"placeholder="请输入" value="已入住" type="text" style=" outline:none; border-style:none;" >
         <img class="rightImage" src="../images/arrow_right_8x13_@2x.png">
        
     </li>
@@ -56,12 +56,12 @@
     </li>
     <li class="borderColor">
          <span class="leftTitle lightGrayColor">入住套数</span>
-         <span class="jianhaoRightContent bluePurpleColor"> + </span>
-         <span class="rightCenterContent orangeColor"> 1 </span>
-         <span class="jiahaoleftContent bluePurpleColor"> - </span>
+         <span id = "additionId" class="jianhaoRightContent bluePurpleColor"> + </span>
+         <span id= "houseNumberId"class="rightCenterContent orangeColor"> 1 </span>
+         <span id= "reductionId" class="jiahaoleftContent bluePurpleColor"> - </span>
     </li>
      <li class="borderColor">
-       <textarea placeholder="您可以备注客户的需求" class="textViewContent deepGrayColor"></textarea>
+       <textarea placeholder="您可以备注客户的需求" style="outline:none;" class="textViewContent deepGrayColor"></textarea>
      
      </li>
   </ul>

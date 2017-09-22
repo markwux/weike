@@ -9,6 +9,8 @@
 
 <link rel="stylesheet" type="text/css" href="../css/HomePage.css">
 
+<link rel="stylesheet" type="text/css" href="../css/PublicColor.css">
+
 <link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
 <link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.min.css">
 <link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
@@ -16,6 +18,7 @@
 <script src="../jqweui/js/jquery-weui.js"></script>
 <script src="../jqweui/js/swiper.js"></script>
 <script src="../jqweui/lib/fastclick.js"></script>
+<script src="../jqweui/js/jquery.cookie.js"></script>
 
 <script src="../js/HomePage.js"></script>
 
@@ -25,7 +28,12 @@
 
 
 <div class="headerView" >
-   <span class="centerButton" > 微客+（鄞州万达店) </span>
+  <a href="javascript:;" class="open-popup" data-target="#changeHotelId">
+   <div class="centerView">
+       <span class="centerButton" > 微客+（鄞州万达店)</span>
+       <img  class="centerButtonImage" src="../images/morder_fold.png"/>
+   </div>
+  </a>
    <img class="backImage" src="../images/index_bg@3x.jpg_unsliced.png" width="100%" height="100%" >
 
    <img id = "personalInformationBtnId"  class="leftSetImage" src="../images/identity_-information_24x24_@3x.png"/>
@@ -126,6 +134,32 @@
   </ul>
 
  </div>
+ 
+ <div id="changeHotelId" class="weui-popup__container popup-bottom" style="background-color:rgba(0,0,0,0.3)">
+  <div class="weui-popup__overlay"></div>
+  <div class="weui-popup__modal">
+     <div class="pushChangeHotelView borderColor lightGrayColor" style=" font-size:13px; width:100%; text-align:left;">
+         <div class="titleLabel">选择房型</div>
+     </div>
+     <div style="clear:both;"></div>
+     <div class="pushChangeHotelView  borderColor deepGrayColor" >
+         <div class="titleLabel">微客+（宁波万达店）</div>
+     </div>
+     <div class="pushChangeHotelView  borderColor deepGrayColor" >
+         <div class="titleLabel">微客+（杭州万达店）</div>
+     </div>
+     <div class="pushChangeHotelView  borderColor deepGrayColor" >
+         <div class="titleLabel">微客+（鄞州万达店）</div>
+     </div>
+     <div class="pushChangeHotelView  borderColor deepGrayColor" >
+         <div class="titleLabel">微客+（上海万达店）</div>
+     </div>
+     
+  </div>
+</div>
+ 
+ 
+ 
  
 </body>
 </html>

@@ -35,14 +35,23 @@
 		height:20px;
 	}
 	
-	.headerView .centerButton{
+	.headerView .centerView{
 		width:80%;
 		left:10%;
-		top:25px;
+		top:15px;
 		color:white;
 		position:absolute;
 		text-align:center;
 		font-size:18px;
+	}
+	.headerView .centerView .centerButton{
+		
+	}
+    .headerView .centerView  .centerButtonImage{
+		padding-left:10px;
+		padding-top:15px;
+		width:16px;
+		height:20px;
 	}
 		
 	.headerView .countLabelDiv{
@@ -161,6 +170,19 @@
 		display:block;
 	}
 	
-		
-       
+	.pushChangeHotelView{
+		background-color:#FFF;
+		text-align:center;
+		font-size:15px;
+		border-width:1px;
+		 border-bottom-style:solid;
+	}
+     .pushChangeHotelView .titleLabel{
+		 
+		 
+		 padding-bottom:10px;
+		 padding-top:20px;
+		 text-align:center; 
+	 }
+		 
 	

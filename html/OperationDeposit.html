@@ -8,10 +8,13 @@
 <link rel="stylesheet" type="text/css" href="../css/PublicColor.css"> <!--颜色公用css-->
 <title>申请押金</title>
 
-
-
-
-
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/css/jquery-weui.min.css">
+<link rel="stylesheet" type="text/css" href="../jqweui/lib/weui.min.css">
+<script src="../jqweui/lib/jquery-2.1.4.js"></script>
+<script src="../jqweui/js/jquery-weui.js"></script>
+<script src="../jqweui/js/swiper.js"></script>
+<script src="../jqweui/lib/fastclick.js"></script>
 
 <script src="../js/OperationDeposit.js"></script>
 </head>
@@ -19,7 +22,7 @@
 <body>
     
  <div class="depositCountView borderColor">
-     <img class="leftImage" src="../images/deposit_pledge@3x.jpg_unsliced.png">
+     <img  class="leftImage" src="../images/deposit_pledge@3x.jpg_unsliced.png">
      <span class=" titleLabel lightGrayColor">在线收取押金</span>
      <span class="titleLabel customBlackColor">$700.00</span>
  </div>
@@ -28,22 +31,23 @@
      <img  class="leftImage" src="../images/deposit_refund@3x.jpg_unsliced.png">
      <span class=" titleLabel lightGrayColor">将押金全部退还给房客</span>
      <span class="titleLabel customBlackColor">$700.00</span>
-     <img class="rightButtonImage" src="../images/alert_check_20x20_@3x.png"> <!--alert_checkNone_18x18_@3x-->
+     <img class="rightButtonImage" id = "refundableBtnId" src="../images/alert_check_20x20_@3x.png"> <!--alert_checkNone_18x18_@3x-->
 </div>
-<div class="deductMoneyView borderColor">
+<div class="deductMoneyView borderColor refundablePath">
   <span class="leftLabel lightGrayColor">申请扣款金额</span>
    <span class="leftLabel customBlackColor" style="padding-left:10px;">￥</span>
     <input class="inputOne" placeholder="0.00" value="" type="text" 
     style="border-style:none" >
 </div>
-<div class="deductMoneyView backGroundColer" style="border-width:0px; padding-bottom:0px;">
+
+<div class="deductMoneyView backGroundColer refundablePath" style="border-width:0px; padding-bottom:0px;">
   <span class="leftLabel lightGrayColor ">扣款原因</span>
-  
 </div>
-<div class="reasonView">
+
+<div class="reasonView refundablePath">
  <textarea  class="reasonTextView deepGrayColor" style="border-top-width:0px; " placeholder="请输入扣款原因（500字内）"></textarea>
  </div>
- <div style="border-radius:5px; padding:15px; margin:20px; background-color:#999; color:#FFF; text-align:center; font-size:16px;">确认</div>
+ <div class="backGroundBluePurpleColer" style="border-radius:5px; padding:10px; margin:20px;  color:#FFF; text-align:center; font-size:16px;">确认</div>
  
 </body>
 </html>
