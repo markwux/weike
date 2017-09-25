@@ -82,10 +82,46 @@
         });
     </script>
 </div>
-<div class="div_item">
+<div id="newTime_contain"></div>
+<div class="div_item" id="addnewtime">
     <img src="../images/add_gray_15x15_@2x.png" style="width: 15px;height: 15px">
     <span class="color_lightgrey text_bigSize"style="padding-left: 10px;position: relative;bottom: 1px">添加新时间段</span>
 </div>
+<!--<script>
+    $("#addnewtime").click(function () {
+        var s = '<div class="div_item"> '+
+                '<input type="text" class="color_black text_bigSize input_edit" onclick="pickera(this)"/>'+
+                '<div class="div_num" ><img src="../images/arrow_right_8x13_@2x.png"></div>';
+        $("#newTime_contain").append(s);
+
+    })
+
+    $("#addnewtime").picker({
+        title: "添加新时段",
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00',
+                    '07:00', '08:00', '09:00', '10:00', '11:00',
+                    '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00',
+                    '19:00', '20:00', '21:00', '22:00', '23:00', '24:00']
+            },
+            {
+                textAlign:'center'  ,
+                values:['—']
+            },
+            {
+                textAlign: 'center',
+                values: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00',
+                    '07:00', '08:00', '09:00', '10:00', '11:00',
+                    '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00'
+                    , '19:00', '20:00', '21:00', '22:00', '23:00', '24:00']
+            }
+        ]
+    });
+    function pickera(e){
+    }
+</script>-->
 <div class="div_item">
     <span class="color_lightgrey text_bigSize">推荐入住人数</span>
     <div class="div_num">
@@ -107,11 +143,7 @@
         });
         $("#plus").click(function(){
             var value = parseInt($("#liveNum").text());
-            if(value<5) {
-                $("#liveNum").text(value + 1);
-            }else{
-                alert("最大为5");
-            }
+            $("#liveNum").text(value + 1);
         });
 
     </script>

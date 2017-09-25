@@ -116,9 +116,7 @@ function clickitem(e){
         $("#bedsize").css("border","0px");
         $("#num_cont").show();
         $("#bednum").show();
-
     }else if(ula.id == "num_cont"){
-
         divs[0].appendChild(img_sel);
         $("#bednum").text(spans[0].innerHTML);
         $("#num_cont").hide();

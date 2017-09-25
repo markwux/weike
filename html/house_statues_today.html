@@ -6,8 +6,13 @@
     <link rel="stylesheet" type="text/css" href="../css/vplus.css"/>
     <link rel="stylesheet" type="text/css" href="../css/house.css"/>
     <link rel="stylesheet" type="text/css" href="../css/house_table2.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/house_list.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/weui.min.css">
     <script src="../js/jquery-3.1.1.js"></script>
     <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/jquery-weui.js"></script>
     <title>今日房态</title>
 </head>
 <body>
@@ -52,7 +57,7 @@
 </div>
 <table>
     <tr>
-        <td style="background-color: lightgray">
+        <td style="background-color: lightgray" onclick="popupwindow(this)">
             <div>
                 <p >A1001</p>
                 <p >阳光葵 大床房</p>
@@ -62,7 +67,7 @@
             <img class="statues_close" src="../images/homeIconLock_24x24_@2x.png">
             <span class="span_msg">1</span>
         </td>
-        <td style="background-color: deepskyblue">
+        <td style="background-color: deepskyblue" onclick="popupwindow(this)">
             <div>
                 <p >A2001</p>
                 <p >阳光葵 大床房</p>
@@ -71,7 +76,7 @@
             </div>
             <span class="span_msg">3</span>
         </td>
-        <td style="background-color: darkgreen">
+        <td style="background-color: darkgreen" onclick="popupwindow(this)">
             <div>
                 <p >A3001</p>
                 <p >阳光葵 大床房</p>
@@ -82,7 +87,7 @@
         </td>
         </tr>
     <tr>
-        <td style="background-color: red">
+        <td style="background-color: red" onclick="popupwindow(this)">
             <div>
                 <p >A1002</p>
                 <p >阳光葵 大床房</p>
@@ -90,7 +95,7 @@
             </div>
             <span class="span_msg">1</span>
         </td>
-        <td style="background-color: rebeccapurple">
+        <td style="background-color: rebeccapurple" onclick="popupwindow(this)">
             <div>
                 <p >A2002</p>
                 <p >阳光葵 大床房</p>
@@ -98,7 +103,7 @@
             </div>
             <span class="span_msg">2</span>
         </td>
-        <td style="background-color: deepskyblue">
+        <td style="background-color: deepskyblue" onclick="popupwindow(this)">
             <div>
                 <p >A3002</p>
                 <p >阳光葵 大床房</p>
@@ -111,7 +116,7 @@
 
     <tr>
 
-        <td style="background-color: lightgray">
+        <td style="background-color: lightgray" onclick="popupwindow(this)">
             <div>
                 <p >A1003</p>
                 <p >阳光葵 大床房</p>
@@ -122,7 +127,7 @@
             <span class="span_msg">1</span>
         </td>
 
-        <td style="background-color: darkgreen">
+        <td style="background-color: darkgreen" onclick="popupwindow(this)">
             <div>
                 <p >A2003</p>
                 <p >阳光葵 大床房</p>
@@ -131,7 +136,7 @@
             <div class="statues_others" style="background:springgreen "></div>
             <span class="span_msg">3</span>
         </td>
-        <td style="background-color: rebeccapurple">
+        <td style="background-color: rebeccapurple" onclick="popupwindow(this)">
             <div>
                 <p >A3003</p>
                 <p >阳光葵 大床房</p>
@@ -141,7 +146,7 @@
         </td>
     </tr>
         <tr>
-        <td style="background-color: red">
+        <td style="background-color: red" onclick="popupwindow(this)">
             <div>
                 <p >A1004</p>
                 <p >阳光葵 大床房</p>
@@ -149,7 +154,7 @@
             </div>
             <span class="span_msg">1</span>
         </td>
-        <td style="background-color: rebeccapurple">
+        <td style="background-color: rebeccapurple" onclick="popupwindow(this)">
             <div>
                 <p >A2004</p>
                 <p >阳光葵 大床房</p>
@@ -157,7 +162,7 @@
             </div>
             <span class="span_msg">2</span>
         </td>
-            <td style="background-color: lightgray">
+            <td style="background-color: lightgray" onclick="popupwindow(this)">
                 <div>
                     <p >A3004</p>
                     <p >阳光葵 大床房</p>
@@ -169,7 +174,7 @@
             </td>
     </tr>
     <tr>
-        <td style="background-color: lightgray">
+        <td style="background-color: lightgray" onclick="popupwindow(this)">
             <div>
                 <p >A1005</p>
                 <p >阳光葵 大床房</p>
@@ -179,7 +184,7 @@
             <img class="statues_close" src="../images/homeIconLock_24x24_@2x.png">
             <span class="span_msg">1</span>
         </td>
-        <td style="background-color: deepskyblue">
+        <td style="background-color: deepskyblue" onclick="popupwindow(this)">
             <div>
                 <p >A2005</p>
                 <p >阳光葵 大床房</p>
@@ -188,7 +193,7 @@
             </div>
             <span class="span_msg">3</span>
         </td>
-        <td style="background-color: darkgreen">
+        <td style="background-color: darkgreen" onclick="popupwindow(this)">
             <div>
                 <p >A3005</p>
                 <p >阳光葵 大床房</p>
@@ -200,5 +205,89 @@
     </tr>
     <tr>
 </table>
+<div id="popup" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+        <div style="overflow: hidden;background-color: white;" id="infos">
+            <div class="basic_info">
+                <div class="info1">
+                    <span class="text_bigSize color_bluepurple">已预约</span>
+                    <span class=" color_lightgrey" style="font-size: 11px">共一个房间</span>
+                    </br>
+                    <span class="text_smallSize color_black">卢东才</span>
+                    <span class="text_smallSize color_black">40065878942</span>
+                </div>
+                <div class="info2">
+                    <span class=" color_black" style="font-weight: bold;float: right;font-size: 17px">￥338</span>
+                    <span class="text_smallSize "style="font-size: 12px;margin-right: 5px">艺龙网</span>
+                    <p class="color_lightgrey" style="font-size: 11px;text-align: right;line-height: 20px">已收&nbsp￥338</p>
+                </div>
+            </div>
+            <div class="room_info">
+                <img src="../images/statusOrder_blueDot_8x8_@2x.png" style="width: 8px;height: 8px;float: left">
+                <div style="display: inline-block;margin-left: 15px;">
+                    <div ><p class="p_name">宁波四叶草+&nbsp;(豪华大床房)&nbsp;&nbsp;040803</p></div>
+                    <p class="p_char" style="padding-top: 12px">1室0厅1卫|推荐入住2人|共4套</p>
+                </div>
+            </div>
+            <div class="btn_sel">
+                <div style="width: 30%;height: 100%;display: inline-block"></div>
+                <button id="check_in" type="button">办理入住</button>
+                <button id="change" type="button">查看/修改</button>
+            </div>
+        </div>
+        <div id="openroom" style="background-color: white;display: none;">
+            <p>已选040803（宁波柠檬新+（豪华双床房间））</p>
+            <button type="button">取消关房</button>
+            <button type="button">取消</button>
+        </div>
+        <div id="clearroom" style="background-color: white;display: none; ">
+            <p>已选040803（宁波柠檬新+（豪华双床房间））</p>
+            <button type="button">置净房间</button>
+            <button type="button">取消</button>
+        </div>
+    </div>
+</div>
+<script>
+
+    function popupwindow(e){
+        var bgColor = e.style.backgroundColor;
+        if(bgColor!=null){
+           /* if(bgColor == "td_free") {
+                if (e.innerHTML == null || e.innerHTML=="") {
+                    e.style.backgroundColor = "#5264cc";
+                    var s = '  <img src="../images/status_selected_12x12_@2x.png" class="img_freeselect">';
+                    e.innerHTML = s;
+                    $("#select_div").show();
+                    ind1 ++;
+                    $("#select_text").text("1个房间，"+  ind1+"个间夜") ;
+                }else{
+                    e.style.backgroundColor = "white";
+                    e.innerHTML = null;
+                    ind1 --;
+                    $("#select_text").text("1个房间，"+  ind1+"个间夜") ;
+                    if(ind1 <=0 ){
+                        $("#select_div").hide();
+                    }
+                }
+            }else{*/
+                $("#popup").popup();
+                if(bgColor =="lightgray"){
+                    $("#openroom").show();
+                    $("#infos").hide();
+                    $("#clearroom").hide();
+                }else if(bgColor =="rebeccapurple") {
+                    $("#infos").hide();
+                    $("#openroom").hide();
+                    $("#clearroom").show();
+                }else{
+                    $("#infos").show();
+                    $("#openroom").hide();
+                    $("#clearroom").hide();
+                }
+            }
+      //  }
+    }
+</script>
 </body>
 </html>

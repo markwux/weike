@@ -23,71 +23,109 @@
 <div class="div_photo_content" style="top: 40px">
     <a href="javascript:void(0);" onclick="window.location.href='./photo_edit.html'" target="_blank">
     <img class="cover_photo" src="../images/homeBackground_375x240_@2x.png"></a>
-    <img class="editorselect1" src="../images/edit_pic_15x15_@2x.png">
+    <img class="editorselect1" src="../images/edit_pic_15x15_@2x.png" id="editsel1">
 </div>
 <div class="div_photo_list">
 <table>
     <tr>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
                 <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
             <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
             <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
-        </td>
-        <td>
-            <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
-        </td>
-        <td>
-            <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
     </tr>
     <tr>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
             <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
             <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
             <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
     </tr>
     <tr>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
             <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
             <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
-        <td>
+        <td onclick="tdOnClickFunc(this)">
             <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
-            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
+        </td>
+    </tr>
+    <tr>
+        <td onclick="tdOnClickFunc(this)">
+            <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
+        </td>
+        <td onclick="tdOnClickFunc(this)">
+            <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
+        </td>
+        <td onclick="tdOnClickFunc(this)">
+            <img  src="../images/homeBackground_375x240_@2x.png" class="img_photo">
+            <img class="editorselect2" src="../images/edit_pic_15x15_@2x.png" alt = "true">
         </td>
     </tr>
 </table>
 </div>
 <div class="div_toolbar">
-    <div class="div_tool_item">新增照片</div>
-    <div class="div_tool_item">编辑</div>
+    <div class="div_tool_item" id="addnewPic">新增照片</div>
+    <div class="div_tool_item" id="editPic">编辑</div>
+    <div  id="delPic" style="display: none;">删除（<span>0</span>）</div>
 </div>
+<script>
+    var status = "editmode";
+
+    $("#editPic").click(function(){
+        status = "delmode";
+        $("#editsel1").hide();
+        $("#addnewPic").hide();
+        $("#editPic").hide();
+        $("#delPic").show();
+        var imgedits = document.getElementsByClassName("editorselect2");
+        for(var i = 0;i<imgedits.length;i++){
+            imgedits[i].src = "../images/CheckBox_link_black_18x18_@2x.png";
+        }
+    })
+
+    function tdOnClickFunc(e){
+        var delpic = document.getElementById("delPic");
+        if(status == "editmode"){
+            window.location.href = "./photo_edit.html";
+        }else if( status == "delmode"){
+            var imges = e.getElementsByClassName("editorselect2");
+            if(imges[0].alt == "false"){
+                imges[0].alt = "true";
+                imges[0].src = "../images/CheckBox_link_black_18x18_@2x.png";
+                var spans = delpic.getElementsByTagName("span");
+                var value = parseInt(spans[0].innerText);
+                spans[0].innerText = value-1;
+            }else {
+                imges[0].alt = "false";
+                imges[0].src = "../images/CheckBox_hover_18x18_@2x.png";
+                var spans = delpic.getElementsByTagName("span");
+                var value = parseInt(spans[0].innerText);
+                spans[0].innerText = value+1;
+            }
+        }
+    }
+</script>
 </body>
 </html>

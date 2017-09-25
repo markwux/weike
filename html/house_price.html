@@ -180,13 +180,14 @@
             <span class="color_black text_bigSize">结束日期：</span>
             <span  style="margin-left: 16px" class="color_black text_smallSize">2017年9月1日</span>
         </div>
-        <div class="weui-cells weui-cells_checkbox" style="margin-top: 0px;width: 100%">
+
+        <div class="weui-cells weui-cells_checkbox" style="margin-top: 0px;width: 100%" id="samePrice" onclick="checkOnFunc(this)">
             <label class="weui-cell weui-check__label" for="s11">
                 <div class="weui-cell__bd">
                     <p class="color_black text_bigSize">一周同价</p>
                 </div>
                 <div class="weui-cell__hd">
-                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11" >
                     <i class="weui-icon-checked"></i>
                 </div>
             </label>
@@ -201,13 +202,13 @@
             </div>
 
         </div>
-        <div class="weui-cells weui-cells_checkbox" style="margin-top: 0px;width: 100%">
+        <div class="weui-cells weui-cells_checkbox" style="margin-top: 0px;width: 100%" id="diffPrice" onclick="checkOnFunc(this)">
             <label class="weui-cell weui-check__label" for="s12">
                 <div class="weui-cell__bd">
                     <p class="color_black text_bigSize">一周异价</p>
                 </div>
                 <div class="weui-cell__hd">
-                    <input type="checkbox" class="weui-check" name="checkbox1" id="s12">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s12" >
                     <i class="weui-icon-checked"></i>
                 </div>
             </label>
@@ -221,6 +222,18 @@
         tds[i].addEventListener("touchstart",touchSatrtFunc(this),false);
         tds[i].addEventListener("touchmove",touchMoveFunc(this),false);
     }
+
+    function checkOnFunc(e){
+        if(e.id=="samePrice"){
+            var diss = document.getElementById("s12");
+            diss.checked=false;
+        }else if(e.id=="diffPrice"){
+            var diss = document.getElementById("s11");
+            diss.checked=false;
+        }
+    }
+
+
 </script>
 </body>
 </html>
