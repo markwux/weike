@@ -7,6 +7,12 @@ $(function(){ /*江南理想*/
     document.ontouchmove = function(e){ e.preventDefault(); }; //文档禁止 touchmove事件
 	
 	
+	//订单详情
+	$("#checkinOrderId").click(function(){
+		
+		var	url = "HandlingChechIn.html?";//此处拼接内容
+          window.location.href = url;
+	});
 	
 	//订单详情
 	$("#orderlistCellId1").click(function(){
