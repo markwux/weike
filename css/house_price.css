@@ -140,17 +140,25 @@ td{
 
 .div_discount{
     width: 92%;
-    height: 16px;
-    padding: 16px 4%;
+    height: 30px;
+    padding: 9px 4%;
     clear: both;
+}
+
+.input_editdiscount{
+    border: 1px solid #eeeeee;
+    width: 75px;
+    height: 30px;
+    display: none;
 }
 
 .div_discount span{
     color: #ff8a80;
     font-size: 13px;
+    line-height: 30px;
 }
 
-.div_discount span strong{
+.div_discount strong{
     padding-left: 5px;
     color: black;
     font-weight: bold;
@@ -158,6 +166,7 @@ td{
 
 .div_discount a{
     font-size: 13px;
+    line-height: 30px;
     color: #5264cc;
     float: right;
 }

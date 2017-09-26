@@ -15,6 +15,7 @@ function clickOnFunc(e){
         $("#statues_div").hide();
         e.style.backgroundColor="#8c9eff";
         for(var i = 0;i<ps.length;i++){
+
             ps[i].style.color = "white";
         }
         img[0].style.display = "inline";
@@ -26,7 +27,13 @@ function clickOnFunc(e){
         }
         e.style.backgroundColor="white";
         for(var i = 0;i<ps.length;i++){
-            ps[i].style.color = "#8c9eff";
+            if(ps[i].className =="p_festival"){
+                ps[i].style.color = "#ff8a80";
+            }else if(ps[i].className =="p_day"){
+                ps[i].style.color = "#858585";
+            }else {
+                ps[i].style.color = "#8c9eff";
+            }
         }
         img[0].style.display = "none";
     }

@@ -16,11 +16,49 @@
     <script src="../js/jquery.cookie.js"></script>
     <script src="../js/jquery-weui.js"></script>
     <script>
-        function showDatelist(){
+        function showDatelist(e) {
+
             $(".datelist").toggle();
+            var divC = e.getElementsByTagName("div");
+            var img_arrow = divC[0].getElementsByTagName("img");
+            if (img_arrow[0].alt == "down") {
+                img_arrow[0].src = "../images/arrow_up_14x8_@1x.png";
+                img_arrow[0].alt = "up"
+            }else {
+                img_arrow[0].src = "../images/arrow_down_14x8_@1x.png";
+                img_arrow[0].alt = "down"
+            }
         }
-        function showDiscount(){
+        function showDiscount(e){
             $(".div_discount").toggle();
+
+            var divC = e.getElementsByTagName("div");
+            var img_arrow = divC[0].getElementsByTagName("img");
+            if (img_arrow[0].alt == "down") {
+                img_arrow[0].src = "../images/arrow_up_14x8_@1x.png";
+                img_arrow[0].alt = "up"
+            }else {
+                img_arrow[0].src = "../images/arrow_down_14x8_@1x.png";
+                img_arrow[0].alt = "down"
+            }
+        }
+
+        function editthis(e) {
+            var divP = e.parentNode;
+            var spanP = divP.getElementsByTagName("span");
+            var inputP = divP.getElementsByTagName("input");
+            if (e.innerText == "编辑") {
+                spanP[0].style.display = "none";
+                inputP[0].style.display = "inline";
+                inputP[0].value = spanP[0].innerText;
+                e.innerText = "确定";
+            }else if(e.innerText == "确定"){
+                spanP[0].style.display = "inline";
+                inputP[0].style.display = "none";
+                spanP[0].innerText = inputP[0].value;
+                e.innerText = "编辑";
+            }
+
         }
     </script>
     <title>更多价格</title>
@@ -32,10 +70,10 @@
         <img src="../images/roomStatus_more_22x5_@2x.png" style="width: 25px;height: 8px">
     </div>
 </div>
-<a  href="javascript:showDatelist();">
+<a  onclick="javascript:showDatelist(this);">
 <div class="div_item">
     <span class="color_black text_bigSize">“惊喜”冬季特惠（自定义价）</span>
-    <img src="../images/arrow_down_14x8_@1x.png" class="img_arrowdown">
+    <img src="../images/arrow_down_14x8_@1x.png" class="img_arrowdown" alt="down">
 </div>
 </a>
 <div style="display: none" class="datelist">
@@ -135,15 +173,17 @@
     <img src="../images/arrow_down_14x8_@1x.png" class="img_arrowdown">
 </div>
 
-<a href="javascript:showDiscount();">
+<a onclick="javascript:showDiscount(this);">
 <div class="div_item" style="margin-top: 30px">
     <span class="color_black text_bigSize">连住30天（折扣价）</span>
-    <img src="../images/arrow_down_14x8_@1x.png" class="img_arrowdown">
+    <img src="../images/arrow_down_14x8_@1x.png" class="img_arrowdown" alt="down">
 </div></a>
 
     <div class="div_discount" style="display: none">
-        <span>8.0<strong>折</strong></span>
-        <a>编辑</a>
+        <span>8.0</span>
+        <input type="text" class="input_editdiscount">
+        <strong>折</strong>
+        <a  onclick="javascript:editthis(this);">编辑</a>
     </div>
 <div class="div_item">
     <span class="color_black text_bigSize">连住7天（折扣价）</span>
